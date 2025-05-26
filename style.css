@@ -1,0 +1,118 @@
+/* Full-page gradient background */
+body {
+    background: #3d094d;
+    background: linear-gradient(180deg, rgba(46, 5, 56, 1) 0%, rgba(67, 30, 107, 1) 25%, rgba(26, 64, 117, 1) 50%, rgba(47, 27, 112, 1) 75%, rgba(5, 14, 56, 1) 100%);
+    color: white; /* optional default text color */
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Twinkling stars overlay */
+  #twinkle-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+    overflow: visible;
+  }
+  
+  .twinkle-star {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0; /* start invisible */
+    animation: fadeTwinkle 3s forwards; /* play once */
+  }
+  
+  @keyframes fadeTwinkle {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  .norican-regular {
+    font-family: "Norican", cursive;
+    font-weight: 100;
+    font-style: normal;
+  }
+  .sriracha-regular {
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+/* Apply the Norican font to the entire navbar */
+#navbar {
+    font-family: 'Sriracha', cursive !important;
+  }
+  
+  /* Optional: specifically style navbar brand and links */
+  #navbar .navbar-brand,
+  #navbar .nav-link {
+    font-family: 'Sriracha', cursive !important;
+  }
+  
+  /* Optional: make brand text larger */
+  #navbar .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 300;
+  }
+  
+  
+  
+/* General Section Styling */
+section {
+    padding: 100px 0;
+  }
+  
+  @media (max-width: 576px) {
+    section {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  
+  /* About Section */
+  #about {
+  }
+  
+  /* Projects Section */
+  #projects {
+  }
+  
+  /* Artwork Section */
+  #artwork {
+  }
+  
+  /* Contact Section */
+  #contact {
+  }
+  
+  /* Optional: Card customization */
+  .card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Carousel image control */
+  .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Form tweaks */
+  form .form-control {
+    border-radius: 8px;
+    box-shadow: none;
+  }
