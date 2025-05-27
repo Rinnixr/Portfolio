@@ -10,9 +10,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Norican&family=Sriracha&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Electrolize&family=Norican&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sriracha&display=swap" rel="stylesheet">
   
   <style>
     html {
@@ -28,7 +28,7 @@
     <div id="twinkle-container"></div>
 
   <!-- Navbar -->
-  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <nav id="navbar" class="navbar text-white navbar-expand-lg fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">The Curio Closet</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -36,34 +36,14 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#artwork">Artwork</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
         </ul>
       </div>
     </div>
   </nav>
-
-  <!-- About Me Section -->
-  <section id="about">
-    <div class="container">
-      <h2 class="mb-4">About Me</h2>
-      <div class="row align-items-center">
-        <!-- Photo container -->
-        <div class="col-md-4 d-flex justify-content-center mx-auto mb-4 mb-md-0" style="max-width: 300px;">
-          <img src="Assets/ProfesssionalPhoto.png" alt="Your Name" class="img-fluid rounded" style="width: 100%; height: 300px; object-fit: cover;" />
-        </div> 
-        <!-- Text container -->
-        <div class="col-md-8">
-          <p>Fuelled by a passion for gaming and storytelling - An aspiring game developer who brings worlds to life through art and code.</p>
-          <p>With a background as a Game Artist and a relentless drive to create, I strive to craft experiences that players won't forget.</p>
-          <p>Always designing, always creating.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  
 
   <!-- Projects Section -->
   <section id="projects" class="text-light">
@@ -139,18 +119,47 @@
     </div>
   </section>
 
+<!-- About Me Section -->
+<section id="about">
+  <div class="container">
+    <h2 class="mb-4">About Me</h2>
+    <div class="row align-items-center">
+      
+      <!-- Photo container -->
+      <div class="col-md-4 d-flex justify-content-center mx-auto mb-4 mb-md-0" style="max-width: 300px;">
+        <img src="Assets/ProfesssionalPhoto.png" alt="Your Name" class="img-fluid rounded" style="width: 100%; height: 300px; object-fit: cover;" />
+      </div>
+
+      <!-- Text container -->
+      <div class="col-md-8">
+        <p>Fuelled by a passion for gaming and storytelling - An aspiring game developer who brings worlds to life through art and code.</p>
+        <p>With a background as a Game Artist and a relentless drive to create, I strive to craft experiences that players won't forget.</p>
+        <p>Always designing, always creating.</p>
+
+      <!-- Call-to-action + LinkedIn icon-only button -->
+      <div class="mt-4">
+        <p class="fw-bold mb-2">Connect with me today!</p>
+        <a href="https://www.linkedin.com/in/mandy-koh-b865151a9" target="_blank" class="d-inline-block">
+          <img src="Assets/LI-Logo.png" alt="LinkedIn" class="linkedin-icon-small">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
   <!-- Contact Me Section -->
   <section id="contact" class="">
     <div class="container">
       <h2>Contact Me</h2>
-      <form>
+      <form action="https://formsubmit.co/mandyykoh@email.com" method="POST">
         <div class="mb-3">
           <label for="name" class="form-label">Name</label>
           <input type="text" class="form-control" id="name" placeholder="Your name">
         </div>
         <div class="mb-3">
           <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="Your email">
+          <input type="email" name="email" class="form-control" id="email" placeholder="Your email">
         </div>
         <div class="mb-3">
           <label for="message" class="form-label">Message</label>
@@ -161,10 +170,24 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-end p-4">
-    <p>&copy; 2025 Mandy's Portfolio</p>
-  </footer>
+<!-- Footer -->
+<footer class="text-white bg-dark p-4">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      
+      <!-- Left: LinkedIn Button -->
+      <a href="https://www.linkedin.com/in/mandy-koh-b865151a9" target="_blank" class="btn text-light d-flex align-items-center">
+        <img src="Assets/LI-In-Bug.png" alt="LinkedIn" style="height: 20px; width: 20px; margin-right: 8px;">
+        LinkedIn
+      </a>
+
+      <!-- Right: Name or copyright -->
+      <p class="mb-0 text-end">&copy; 2025 Mandy's Portfolio</p>
+    </div>
+  </div>
+</footer>
+
+
 
   <script src="script.js"></script>
 </body>

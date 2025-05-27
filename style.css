@@ -1,9 +1,47 @@
+/* Fonts */
+  .norican-regular {
+    font-family: "Norican", cursive;
+    font-weight: 100;
+    font-style: normal;
+  }
+  .sriracha-regular {
+    font-family: "Sriracha", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .nunito {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+  .electrolize-regular {
+  font-family: "Electrolize", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.audiowide-regular {
+  font-family: "Audiowide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+h2 {
+  font-family: 'Audiowide', sans-serif;
+}
+
+
 /* Full-page gradient background */
 body {
-    background: #3d094d;
-    background: linear-gradient(180deg, rgba(46, 5, 56, 1) 0%, rgba(67, 30, 107, 1) 25%, rgba(26, 64, 117, 1) 50%, rgba(47, 27, 112, 1) 75%, rgba(5, 14, 56, 1) 100%);
+  background: #25254d;
+  background: linear-gradient(0deg,rgba(12, 12, 33, 1) 0%, rgba(3, 24, 56, 1) 50%, rgba(2, 4, 28, 1) 100%);
     color: white; /* optional default text color */
     min-height: 100vh;
+    font-family: 'Nunito';
     margin: 0;
     padding: 0;
   }
@@ -35,35 +73,52 @@ body {
     50% { opacity: 1; }
     100% { opacity: 0; }
   }
-  .norican-regular {
-    font-family: "Norican", cursive;
-    font-weight: 100;
-    font-style: normal;
-  }
-  .sriracha-regular {
-    font-family: "Sriracha", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
 
 /* Apply the Norican font to the entire navbar */
 #navbar {
-    font-family: 'Sriracha', cursive !important;
-  }
-  
-  /* Optional: specifically style navbar brand and links */
-  #navbar .navbar-brand,
-  #navbar .nav-link {
-    font-family: 'Sriracha', cursive !important;
-  }
-  
-  /* Optional: make brand text larger */
-  #navbar .navbar-brand {
-    font-size: 1.8rem;
-    font-weight: 300;
-  }
-  
+  font-family: 'Sriracha', cursive !important;
+  background: #00000083 !important;
+  color: white !important;
+}
+
+/* Ensure links are white */
+#navbar .navbar-brand,
+#navbar .nav-link {
+  color: white !important;
+  font-family: 'Audiowide', cursive !important;
+}
+
+/* Optional: highlight on hover */
+#navbar .nav-link:hover {
+  color: #cb93ff !important; /* or any accent color you like */
+}
+
+/* Optional: style brand */
+#navbar .navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.navbar-toggler {
+  border: none; /* Optional: remove border if you want */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+.linkedin-icon-small {
+  width: 90px;      /* Much smaller width */
+  height: auto;     /* Preserve aspect ratio */
+  transition: transform 0.2s ease-in-out, filter 0.2s ease-in-out;
+}
+
+.linkedin-icon-small:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
   
   
 /* General Section Styling */
@@ -116,3 +171,9 @@ section {
     border-radius: 8px;
     box-shadow: none;
   }
+
+  footer a.btn img {
+  height: 20px;
+  width: 20px;
+  object-fit: contain;
+}
