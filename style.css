@@ -141,8 +141,14 @@ section {
   }
   
   /* Artwork Section */
-  #artwork {
-  }
+  #artCarousel img {
+  height: 500px; /* or whatever height fits well in your layout */
+  object-fit: contain; /* ensures full image is visible */
+}
+#artCarousel .carousel-inner {
+  max-height: 500px;
+}
+
   
   /* Contact Section */
   #contact {
