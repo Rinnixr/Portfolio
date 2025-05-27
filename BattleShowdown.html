@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Shinwa - Project Spotlight</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Electrolize&family=Norican&family=Nunito&family=Sriracha&display=swap" rel="stylesheet">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .banner-media {
+      max-height: 500px;
+      object-fit: cover;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body class="bg-dark text-light">
+
+  <div id="twinkle-container"></div>
+
+  <!-- Navbar -->
+  <nav id="navbar" class="navbar text-white navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">The Curio Closet</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#artwork">Artwork</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact Me</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Project Content -->
+  <section id="summary" class="pt-5 mt-5">
+    <div class="container">
+        <div class="mb-4">
+        <video class="w-100 rounded shadow" controls>
+            <source src="Assets/.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        </div>
+
+      <h1 class="display-5 mb-3">BattleShowdown</h1>
+      <p class="lead"> An immersive Japanese themed VR horror game created by The Nana Studios, a group consisting of Jolie Ng, Evan Talavera, Muhammad Nur Syakir, and myself.</p>
+
+        <p>Shinwa is a VR horror game that immerses users in Japanese Folklore through various levels, each representing a respective tale.<br>
+        The game was designed to provide an atmospheric, creepy and thrilling experience for players.<br>
+        The game was created using the Unity Game Engine and requires a VR headset to play.</p>
+
+      <h3 class="mt-4">Design Rationale</h3>
+      <p>Our team decided on creating a Japanese themed VR horror game for a multitude of reasons. Firstly, as fellow members of the gaming community, we found the horror game industry is becoming stale, and felt that most of the gameplay/concepts were overused. Moreover, not many horror games are well optimized for VR due to the hardware limitations. After doing some research, we found that there were little to no horror games that allowed players to be in the center of a horror story and therefore came up with a suitable project plan.</p>
+      <p>We have managed to identify a market for Japanese folklore-based VR horror games. Japanese-themed horror games are currently in high demand as they provide a unique perspective into what the Japanese consider to be "horror". Along with this, VR games are also popular amongst horror fans as VR manages to immerse the player fully into the environment around them, creating many opportunities for scares and frights.</p>
+      <p>For this project, I contributed in the story creation, level design, prop placement, 3D character modeling, animation, UI design, dialogue writing, VFX, lighting and post-processing.</p>
+
+      <h4 class="mt-5">Key Features</h4>
+      <ul>
+        <li>3D Surround Audio</li>
+        <li>Story Based, Free Exploration</li>
+        <li>Designed with Color-Deficiency & Lower-Limb in Mind</li>
+        <li>Original Assets</li>
+      </ul>
+
+      <h4 class="mt-5">Tools & Technologies</h4>
+      <ul>
+        <li>Unity Engine (3D)</li>
+        <li>C# Scripting</li>
+        <li>Photoshop, Procreate & Clip Studio Paint</li>
+        <li>Autodesk Maya (3D Modeling)</li>
+        <li>Mixamo (3D Animations)</li>
+      </ul>
+
+      <a href="index.html#projects" class="btn btn-outline-light mt-4">← Back to Projects</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-white p-4 mt-5" style="background-color: #00000083;">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="https://www.linkedin.com/in/mandy-koh-b865151a9" target="_blank" class="btn text-light d-flex align-items-center">
+        <img src="Assets/LI-In-Bug.png" alt="LinkedIn" style="height: 20px; width: 20px; margin-right: 8px;">
+        LinkedIn
+      </a>
+      <p class="mb-0 text-end">&copy; 2025 Mandy's Portfolio</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

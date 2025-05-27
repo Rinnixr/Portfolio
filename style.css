@@ -29,7 +29,6 @@
   font-style: normal;
 }
 
-
 h2 {
   font-family: 'Audiowide', sans-serif;
 }
@@ -118,8 +117,6 @@ body {
   filter: brightness(1.2);
 }
 
-  
-  
 /* General Section Styling */
 section {
     padding: 100px 0;
@@ -131,45 +128,72 @@ section {
       padding-right: 20px;
     }
   }
-  
-  /* About Section */
-  #about {
-  }
-  
-  /* Projects Section */
-  #projects {
-  }
-  
-  /* Artwork Section */
-  #artCarousel img {
-  height: 500px; /* or whatever height fits well in your layout */
-  object-fit: contain; /* ensures full image is visible */
+
+#summary{
+    font-family: 'Nunito';
 }
-#artCarousel .carousel-inner {
-  max-height: 500px;
+  
+.card {
+  border: none;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: linear-gradient(to bottom right, #1e1e2f, #2c2c3a); /* Dark gradient */
+  color: #fff;
 }
 
-  
-  /* Contact Section */
-  #contact {
-  }
-  
-  /* Optional: Card customization */
-  .card {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    transition: transform 0.2s;
-  }
-  
-  .card:hover {
-    transform: scale(1.03);
-  }
-  
-  /* Carousel image control */
-  .carousel-item img {
-    height: 400px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 200px;
+}
+
+.card-title {
+  font-family: 'Electrolize', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.card-text {
+  color: #ccc;
+}
+
+.card .btn {
+  background-color: #6c63ff;
+  border: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: background-color 0.2s ease;
+}
+
+.card .btn:hover {
+  background-color: #5548e5;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.2) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+  transform: skewX(-20deg);
+  transition: left 0.5s;
+  z-index: 1;
+}
+
+.card:hover::before {
+  left: 125%;
+}
   
   /* Form tweaks */
   form .form-control {
