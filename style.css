@@ -76,7 +76,6 @@ body {
 
 /* Apply the Norican font to the entire navbar */
 #navbar {
-  font-family: 'Sriracha', cursive !important;
   background: #00000083 !important;
   color: white !important;
 }
