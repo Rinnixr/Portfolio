@@ -54,20 +54,61 @@ setInterval(createForegroundStar, 900);
 const projectTabs = document.querySelectorAll('[data-project-category]');
 const projectPanels = document.querySelectorAll('[data-project-panel]');
 
+function activateProjectCategory(selectedCategory) {
+  const selectedTab = [...projectTabs].find((tab) => tab.dataset.projectCategory === selectedCategory);
+
+  if (!selectedTab) return;
+
+  projectTabs.forEach((projectTab) => {
+    const isSelected = projectTab === selectedTab;
+    projectTab.classList.toggle('is-active', isSelected);
+    projectTab.setAttribute('aria-selected', isSelected);
+  });
+
+  projectPanels.forEach((panel) => {
+    panel.hidden = panel.dataset.projectPanel !== selectedCategory;
+  });
+}
+
 projectTabs.forEach((tab) => {
   tab.addEventListener('click', () => {
-    const selectedCategory = tab.dataset.projectCategory;
-
-    projectTabs.forEach((projectTab) => {
-      const isSelected = projectTab === tab;
-      projectTab.classList.toggle('is-active', isSelected);
-      projectTab.setAttribute('aria-selected', isSelected);
-    });
-
-    projectPanels.forEach((panel) => {
-      panel.hidden = panel.dataset.projectPanel !== selectedCategory;
-    });
+    activateProjectCategory(tab.dataset.projectCategory);
   });
+});
+
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
+function savePageState() {
+  const activeTab = document.querySelector('.project-tab.is-active');
+  history.replaceState({
+    ...history.state,
+    portfolioScrollY: window.scrollY,
+    portfolioProjectCategory: activeTab?.dataset.projectCategory
+  }, '', window.location.href);
+}
+
+function restorePageState() {
+  const savedState = history.state;
+  const savedTab = savedState?.portfolioProjectCategory;
+  const savedScrollY = Number(savedState?.portfolioScrollY);
+
+  if (savedTab) activateProjectCategory(savedTab);
+
+  if (Number.isFinite(savedScrollY)) {
+    window.requestAnimationFrame(() => {
+      window.requestAnimationFrame(() => window.scrollTo(0, savedScrollY));
+    });
+  }
+}
+
+window.addEventListener('pagehide', savePageState);
+window.addEventListener('pageshow', (event) => {
+  const navigation = performance.getEntriesByType('navigation')[0];
+  const isHistoryReturn = event.persisted || navigation?.type === 'back_forward';
+
+  if (isHistoryReturn) restorePageState();
 });
 
 const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;

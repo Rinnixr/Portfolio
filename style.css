@@ -244,9 +244,12 @@ section {
   color: #fff;
 }
 
-.artwork-carousel-image {
+.carousel-item .artwork-carousel-image {
+  display: block;
+  width: 100%;
   height: min(65vh, 650px);
   object-fit: contain;
+  object-position: center;
 }
 
 .artwork-pdf-slide {
@@ -274,7 +277,7 @@ section {
     padding-bottom: 0.5rem;
   }
 
-  .artwork-carousel-image,
+  .carousel-item .artwork-carousel-image,
   .artwork-pdf-slide {
     height: 55vh;
   }
