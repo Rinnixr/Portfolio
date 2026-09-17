@@ -31,3 +31,22 @@ function createStar() {
 
 // Spawn a star every 100 milliseconds
 setInterval(createStar, 100);
+
+const projectTabs = document.querySelectorAll('[data-project-category]');
+const projectPanels = document.querySelectorAll('[data-project-panel]');
+
+projectTabs.forEach((tab) => {
+  tab.addEventListener('click', () => {
+    const selectedCategory = tab.dataset.projectCategory;
+
+    projectTabs.forEach((projectTab) => {
+      const isSelected = projectTab === tab;
+      projectTab.classList.toggle('is-active', isSelected);
+      projectTab.setAttribute('aria-selected', isSelected);
+    });
+
+    projectPanels.forEach((panel) => {
+      panel.hidden = panel.dataset.projectPanel !== selectedCategory;
+    });
+  });
+});

@@ -51,7 +51,38 @@
   <section id="projects" class="text-light">
     <div class="container">
       <h2 class="mb-4">Projects</h2>
-      <div class="row">
+      <div class="project-tabs" role="tablist" aria-label="Project categories">
+        <button class="project-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="shipped-games-projects" id="shipped-games-tab" data-project-category="shipped-games">Shipped Games</button>
+        <button class="project-tab" type="button" role="tab" aria-selected="false" aria-controls="game-projects" id="game-projects-tab" data-project-category="game-projects">Game Projects</button>
+        <button class="project-tab" type="button" role="tab" aria-selected="false" aria-controls="design-projects" id="design-tab" data-project-category="design">Designs</button>
+        <button class="project-tab" type="button" role="tab" aria-selected="false" aria-controls="art-projects" id="art-tab" data-project-category="art">Artworks</button>
+      </div>
+
+      <div class="row project-panel" role="tabpanel" id="shipped-games-projects" aria-labelledby="shipped-games-tab" data-project-panel="shipped-games">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="Assets/BSDicon.png" class="card-img-top" alt="BattleShowdown">
+            <div class="card-body">
+              <h5 class="card-title">BattleShowdown [Ethlas]</h5>
+              <p class="card-text">Multiplayer PVP Shooter</p>
+              <a href="BattleShowdown.html" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="Assets/KV_logo.png" class="card-img-top" alt="Komo Valley">
+            <div class="card-body">
+              <h5 class="card-title">Komo Valley [Ethlas]</h5>
+              <p class="card-text">Collectors Game</p>
+              <a href="KomoValley.html" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row project-panel" role="tabpanel" id="design-projects" aria-labelledby="design-tab" data-project-panel="design" hidden>
 
         <!--
           <div class="col-md-4 mb-4">
@@ -93,12 +124,25 @@
               <img src="Assets/Acquit.png" class="card-img-top" alt="Acquit">
               <div class="card-body">
                 <h5 class="card-title">Acquit</h5>
-                <p class="card-text">Card Game</p>
+                <p class="card-text">Card Game Design</p>
                 <a href="Acquit.html" class="btn btn-primary">View Project</a>
               </div>
             </div>
           </div>
 
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="Assets/Acquit.png" class="card-img-top" alt="Conquest board game">
+              <div class="card-body">
+                <h5 class="card-title">Conquest</h5>
+                <p class="card-text">Positional Strategy Board Game</p>
+                <a href="Conquest.html" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="row project-panel" role="tabpanel" id="game-projects" aria-labelledby="game-projects-tab" data-project-panel="game-projects" hidden>
         <div class="col-md-4 mb-4">
             <div class="card">
               <img src="Assets/Overseas.png" class="card-img-top" alt="Overseas">
@@ -106,28 +150,6 @@
                 <h5 class="card-title">Overseas</h5>
                 <p class="card-text">Year 1 DigiPen Game Project</p>
                 <a href="Overseas.html" class="btn btn-primary">View Project</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="Assets/BSDicon.png" class="card-img-top" alt="BattleShowdown">
-              <div class="card-body">
-                <h5 class="card-title">BattleShowdown [Ethlas]</h5>
-                <p class="card-text">Multiplayer PVP Shooter</p>
-                <a href="BattleShowdown.html" class="btn btn-primary">View Project</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="Assets/KV_logo.png" class="card-img-top" alt="Komo Valley">
-              <div class="card-body">
-                <h5 class="card-title">Komo Valley [Ethlas]</h5>
-                <p class="card-text">Collectors Game</p>
-                <a href="KomoValley.html" class="btn btn-primary">View Project</a>
               </div>
             </div>
           </div>
@@ -154,31 +176,159 @@
           </div>
         </div>
 
-        <!-- Add more project cards as needed -->
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="Assets/Acquit.png" class="card-img-top" alt="Custom 2D Engine">
+            <div class="card-body">
+              <h5 class="card-title">Custom 2D Engine</h5>
+              <p class="card-text">Custom Game Engine</p>
+              <a href="CustomEngine.html" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="row project-panel" role="tabpanel" id="art-projects" aria-labelledby="art-tab" data-project-panel="art" hidden>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="Assets/By-Product Illustrations.png" class="card-img-top" alt="By-Product illustrations">
+            <div class="card-body">
+              <h5 class="card-title">By-Product Illustrations</h5>
+              <p class="card-text">Illustration Collection</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#byProductModal">View Artwork</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="Assets/MandyKoh_S10205879_ASG1_TurnAround_edited.jpg" class="card-img-top" alt="Character turnaround artwork">
+            <div class="card-body">
+              <h5 class="card-title">Character Turnaround</h5>
+              <p class="card-text">Character Design</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#characterTurnaroundModal">View Artwork</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="Assets/Google Theme Template.png" class="card-img-top" alt="Google theme design">
+            <div class="card-body">
+              <h5 class="card-title">Google Theme</h5>
+              <p class="card-text">Visual Design</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#googleThemeModal">View Artwork</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-<!-- Artwork Section -->
-<section id="artwork" class="text-white">
-  <div class="container">
-    <h2 class="mb-4">Artwork</h2>
-    
-    <div class="embed-responsive" style="position: relative; padding-top: 56.25%; height: 0; overflow: hidden;">
-      <embed 
-        src="Assets/Portfolio.pdf" 
-        type="application/pdf" 
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-      >
+<!-- By-Product Illustrations Gallery -->
+<div class="modal fade" id="byProductModal" tabindex="-1" aria-labelledby="byProductModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content artwork-modal-content">
+      <div class="modal-header border-0">
+        <h2 class="modal-title fs-4" id="byProductModalLabel">By-Product Illustrations</h2>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close By-Product Illustrations gallery"></button>
+      </div>
+      <div class="modal-body pt-0">
+        <div id="byProductCarousel" class="carousel slide" data-bs-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Assets/By-Product Illustrations.png" class="d-block w-100 artwork-carousel-image" alt="By-Product illustrations">
+            </div>
+            <div class="carousel-item">
+              <div class="artwork-pdf-slide">
+                <embed src="Assets/Portfolio.pdf" type="application/pdf" class="artwork-pdf-viewer">
+                <p class="mb-0 mt-3">PDF not loading? <a href="Assets/Portfolio.pdf" target="_blank">Open the portfolio in a new tab.</a></p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#byProductCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous artwork</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#byProductCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next artwork</span>
+          </button>
+        </div>
+      </div>
     </div>
-    <p class="mt-3">
-      Having trouble viewing? 
-      Click <a href="https://drive.google.com/file/d/11Z2EZ3gc-ZXQZrk6h9Id5m9Iw6P9QED5/view?usp=sharing" target="_blank" class="text-info">here</a> to view on Google Drive.
-    </p>
   </div>
-</section>
+</div>
 
+<!-- Character Turnaround Gallery -->
+<div class="modal fade" id="characterTurnaroundModal" tabindex="-1" aria-labelledby="characterTurnaroundModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content artwork-modal-content">
+      <div class="modal-header border-0">
+        <h2 class="modal-title fs-4" id="characterTurnaroundModalLabel">Character Turnaround</h2>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close Character Turnaround gallery"></button>
+      </div>
+      <div class="modal-body pt-0">
+        <div id="characterTurnaroundCarousel" class="carousel slide" data-bs-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Assets/MandyKoh_S10205879_ASG1_TurnAround_edited.jpg" class="d-block w-100 artwork-carousel-image" alt="Character turnaround artwork">
+            </div>
+            <div class="carousel-item">
+              <div class="artwork-pdf-slide">
+                <embed src="Assets/Portfolio.pdf" type="application/pdf" class="artwork-pdf-viewer">
+                <p class="mb-0 mt-3">PDF not loading? <a href="Assets/Portfolio.pdf" target="_blank">Open the portfolio in a new tab.</a></p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#characterTurnaroundCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous item</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#characterTurnaroundCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next item</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Google Theme Gallery -->
+<div class="modal fade" id="googleThemeModal" tabindex="-1" aria-labelledby="googleThemeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content artwork-modal-content">
+      <div class="modal-header border-0">
+        <h2 class="modal-title fs-4" id="googleThemeModalLabel">Google Theme</h2>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close Google Theme gallery"></button>
+      </div>
+      <div class="modal-body pt-0">
+        <div id="googleThemeCarousel" class="carousel slide" data-bs-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Assets/Google Theme Template.png" class="d-block w-100 artwork-carousel-image" alt="Google theme design">
+            </div>
+            <div class="carousel-item">
+              <div class="artwork-pdf-slide">
+                <embed src="Assets/Portfolio.pdf" type="application/pdf" class="artwork-pdf-viewer">
+                <p class="mb-0 mt-3">PDF not loading? <a href="Assets/Portfolio.pdf" target="_blank">Open the portfolio in a new tab.</a></p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#googleThemeCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous item</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#googleThemeCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next item</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- About Me Section -->
 <section id="about">
@@ -215,7 +365,7 @@
   <section id="contact" class="">
     <div class="container">
       <h2 class="mb-4">Contact Me</h2>
-      <form target="_blank" action="https://formsubmit.co/8cceaba75ac71c2862897c2b18ea985b" method="POST">
+      <form target="_blank" action="https://formsubmit.co/mandyykoh@gmail.com" method="POST">
         <div class="mb-3">
           <label for="name" class="form-label">Name</label>
           <input type="text" name="name" class="form-control" placeholder="Full Name" required>
