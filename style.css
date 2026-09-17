@@ -50,8 +50,8 @@ body {
 
 .parallax-glow {
   border-radius: 50%;
-  filter: blur(18px);
-  opacity: 0.28;
+  filter: blur(28px);
+  opacity: 0.46;
   pointer-events: none;
   position: fixed;
   will-change: transform;
@@ -59,24 +59,34 @@ body {
 }
 
 .parallax-glow-one {
-  background: #6c63ff;
-  height: 22rem;
-  right: -8rem;
-  top: 12%;
-  width: 22rem;
+  background: radial-gradient(ellipse at 35% 35%, rgba(190, 124, 255, 0.72), rgba(108, 99, 255, 0.32) 42%, transparent 72%);
+  height: 32rem;
+  right: -10rem;
+  top: 8%;
+  width: 32rem;
 }
 
 .parallax-glow-two {
-  background: #cb93ff;
-  bottom: 8%;
-  height: 16rem;
-  left: -6rem;
-  opacity: 0.16;
-  width: 16rem;
+  background: radial-gradient(ellipse at 60% 45%, rgba(92, 195, 255, 0.42), rgba(47, 99, 213, 0.22) 46%, transparent 75%);
+  bottom: 4%;
+  height: 29rem;
+  left: -11rem;
+  opacity: 0.36;
+  width: 29rem;
+}
+
+.parallax-glow-three {
+  background: radial-gradient(ellipse at 50% 50%, rgba(255, 135, 211, 0.32), rgba(125, 75, 255, 0.12) 48%, transparent 72%);
+  height: 26rem;
+  left: 35%;
+  opacity: 0.3;
+  top: 48%;
+  width: 26rem;
 }
 
   /* Twinkling stars overlay */
-  #twinkle-container {
+#twinkle-container,
+#foreground-stars {
     position: fixed;
     top: 0;
     left: 0;
@@ -85,6 +95,10 @@ body {
     pointer-events: none;
     z-index: 0;
     overflow: visible;
+  }
+
+  #foreground-stars {
+    z-index: 2;
   }
   
   .twinkle-star {
@@ -95,6 +109,15 @@ body {
     border-radius: 50%;
     opacity: 0; /* start invisible */
     animation: fadeTwinkle 3s forwards; /* play once */
+  }
+
+  .foreground-star {
+    position: absolute;
+    background: url('Assets/star.png') no-repeat center center;
+    background-size: contain;
+    filter: drop-shadow(0 0 6px rgba(213, 184, 255, 0.9));
+    opacity: 0;
+    animation: foregroundTwinkle 5s forwards;
   }
   
   @keyframes fadeTwinkle {
@@ -153,6 +176,12 @@ section {
     padding: 10px 0;
     position: relative;
     z-index: 1;
+  }
+
+  @keyframes foregroundTwinkle {
+    0% { opacity: 0; transform: scale(0.6) rotate(0deg); }
+    25%, 75% { opacity: 0.9; }
+    100% { opacity: 0; transform: scale(1.4) rotate(45deg); }
   }
 
 #projects {
@@ -259,6 +288,8 @@ section {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   background: linear-gradient(to bottom right, #1e1e2f, #2c2c3a); /* Dark gradient */
   color: #fff;
+  transform-style: preserve-3d;
+  will-change: transform;
 }
 
 .card:hover {
