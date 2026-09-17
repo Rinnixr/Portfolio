@@ -48,6 +48,33 @@ body {
     padding: 0;
   }
 
+.parallax-glow {
+  border-radius: 50%;
+  filter: blur(18px);
+  opacity: 0.28;
+  pointer-events: none;
+  position: fixed;
+  will-change: transform;
+  z-index: 0;
+}
+
+.parallax-glow-one {
+  background: #6c63ff;
+  height: 22rem;
+  right: -8rem;
+  top: 12%;
+  width: 22rem;
+}
+
+.parallax-glow-two {
+  background: #cb93ff;
+  bottom: 8%;
+  height: 16rem;
+  left: -6rem;
+  opacity: 0.16;
+  width: 16rem;
+}
+
   /* Twinkling stars overlay */
   #twinkle-container {
     position: fixed;
@@ -124,6 +151,8 @@ body {
 /* General Section Styling */
 section {
     padding: 10px 0;
+    position: relative;
+    z-index: 1;
   }
 
 #projects {
@@ -163,6 +192,11 @@ section {
 .project-tab:hover,
 .project-tab:focus-visible {
   color: #fff;
+}
+
+.project-tab:active,
+.card .btn:active {
+  transform: scale(0.96);
 }
 
 .project-tab.is-active {
@@ -232,6 +266,17 @@ section {
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
 }
 
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .card-img-top {
   object-fit: cover;
   height: 200px;
@@ -285,8 +330,26 @@ section {
     box-shadow: none;
   }
 
-  footer a.btn img {
+footer a.btn img {
   height: 20px;
   width: 20px;
   object-fit: contain;
+}
+
+footer {
+  position: relative;
+  z-index: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .parallax-glow {
+    display: none;
+  }
 }
