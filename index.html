@@ -61,6 +61,7 @@
         <button class="project-tab" type="button" role="tab" aria-selected="false" aria-controls="art-projects" id="art-tab" data-project-category="art">Artworks</button>
       </div>
 
+      <!-- Shipped Game Tab -->
       <div class="row project-panel" role="tabpanel" id="shipped-games-projects" aria-labelledby="shipped-games-tab" data-project-panel="shipped-games">
         <div class="col-md-4 mb-4">
           <div class="card">
@@ -83,57 +84,6 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="row project-panel" role="tabpanel" id="design-projects" aria-labelledby="design-tab" data-project-panel="design" hidden>
-          
-        <!-- One Million -->
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="Assets/OneMillion.png" class="card-img-top" alt="One Million">
-              <div class="card-body">
-                <h5 class="card-title">One Million</h5>
-                <p class="card-text">A Full Quest Experience Design</p>
-                <a href="OneMillion.html" class="btn btn-primary">View Project</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- RPG Map Editor 2 -->
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="Assets/Witch'sAbode.png" class="card-img-top" alt="Witch's Abode">
-              <div class="card-body">
-                <h5 class="card-title">RPG Level Designs</h5>
-                <p class="card-text">RPG Map Editor 2</p>
-                <a href="RPGLevelDesigns.html" class="btn btn-primary">View Project</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Conquest -->
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="Assets/Conquest.png" class="card-img-top" alt="Conquest board game">
-              <div class="card-body">
-                <h5 class="card-title">Conquest</h5>
-                <p class="card-text">Positional Strategy Board Game</p>
-                <a href="Conquest.html" class="btn btn-primary">View Project</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Acquit -->
-          <div class="col-md-4 mb-4">
-            <div class="card">
-              <img src="Assets/Acquit.png" class="card-img-top" alt="Acquit">
-              <div class="card-body">
-                <h5 class="card-title">Acquit</h5>
-                <p class="card-text">Card Game Design</p>
-                <a href="Acquit.html" class="btn btn-primary">View Project</a>
-              </div>
-            </div>
-          </div>
       </div>
 
       <!-- Game Projects Tab -->
@@ -198,6 +148,58 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- Design Projects Tab -->
+      <div class="row project-panel" role="tabpanel" id="design-projects" aria-labelledby="design-tab" data-project-panel="design" hidden>
+          
+        <!-- One Million -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="Assets/OneMillion.png" class="card-img-top" alt="One Million">
+              <div class="card-body">
+                <h5 class="card-title">One Million</h5>
+                <p class="card-text">A Full Quest Experience Design</p>
+                <a href="OneMillion.html" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- RPG Map Editor 2 -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="Assets/Witch'sAbode.png" class="card-img-top" alt="Witch's Abode">
+              <div class="card-body">
+                <h5 class="card-title">RPG Level Designs</h5>
+                <p class="card-text">RPG Map Editor 2</p>
+                <a href="RPGLevelDesigns.html" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Conquest -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="Assets/Conquest.png" class="card-img-top" alt="Conquest board game">
+              <div class="card-body">
+                <h5 class="card-title">Conquest</h5>
+                <p class="card-text">Positional Strategy Board Game</p>
+                <a href="Conquest.html" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Acquit -->
+          <div class="col-md-4 mb-4">
+            <div class="card">
+              <img src="Assets/Acquit.png" class="card-img-top" alt="Acquit">
+              <div class="card-body">
+                <h5 class="card-title">Acquit</h5>
+                <p class="card-text">Card Game Design</p>
+                <a href="Acquit.html" class="btn btn-primary">View Project</a>
+              </div>
+            </div>
+          </div>
       </div>
 
       <!-- Artworks Tab -->
@@ -286,41 +288,48 @@
 </div>
 
 <!-- AgriG8 Gallery -->
-<div class="modal fade" id="byProductModal" tabindex="-1" aria-labelledby="byProductModalLabel" aria-hidden="true">
+<div class="modal fade" id="AgriG8Modal" tabindex="-1" aria-labelledby="AgriG8ModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-xl artwork-modal-dialog">
     <div class="modal-content artwork-modal-content">
       <div class="modal-header border-0">
-        <h2 class="modal-title fs-4" id="byProductModalLabel">By-Product Illustrations</h2>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close By-Product Illustrations gallery"></button>
+        <h2 class="modal-title fs-4" id="AgriG8ModalLabel">AgriG8 Artwork</h2>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close AgriG8 Artwork gallery"></button>
       </div>
       <div class="modal-body pt-0">
-        <div id="byProductCarousel" class="carousel slide" data-bs-interval="false">
+        <!-- Changed data-bs-interval to string "false" per Bootstrap specifications -->
+        <div id="AgriG8Carousel" class="carousel slide" data-bs-interval="false">
           <div class="carousel-inner">
 
             <div class="carousel-item active">
               <img src="Assets/AgriG8_Artwork.png" class="d-block artwork-carousel-image" alt="Landscape Final">
             </div>
+            
             <div class="carousel-item">
               <div class="artwork-pdf-slide">
+                <!-- TIP: If the PDF glitches out, swap this iframe for a preview image -->
                 <iframe src="Assets/AgriG8_Artwork.pdf#view=Fit" title="AgriG8_Artwork PDF" class="artwork-pdf-viewer"></iframe>
                 <p class="mb-0 mt-3">PDF not loading? <a href="Assets/AgriG8_Artwork.pdf" target="_blank">Open the artwork in a new tab.</a></p>
               </div>
             </div>
+            
             <div class="carousel-item">
               <img src="Assets/AgriG8Farm.png" class="d-block artwork-carousel-image" alt="AgriG8 Farm App">
             </div>
+            
             <div class="carousel-item">
               <img src="Assets/By-Product Illustrations.png" class="d-block artwork-carousel-image" alt="By-Product illustrations">
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#byProductCarousel" data-bs-slide="prev">
+          
+          <button class="carousel-control-prev" type="button" data-bs-target="#AgriG8Carousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous artwork</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#byProductCarousel" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#AgriG8Carousel" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next artwork</span>
           </button>
+          
         </div>
       </div>
     </div>
