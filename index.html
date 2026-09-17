@@ -194,41 +194,88 @@
       <div class="row project-panel" role="tabpanel" id="art-projects" aria-labelledby="art-tab" data-project-panel="art" hidden>
         <div class="col-md-4 mb-4">
           <div class="card">
-            <img src="Assets/By-Product Illustrations.png" class="card-img-top" alt="By-Product illustrations">
+            <img src="Assets/BSD_ADDCover.png" class="card-img-top" alt="Art Design Document">
             <div class="card-body">
-              <h5 class="card-title">By-Product Illustrations</h5>
-              <p class="card-text">Illustration Collection</p>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#byProductModal">View Artwork</button>
+              <h5 class="card-title">Art Design Document</h5>
+              <p class="card-text">Art Design Document</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ADDModal">View Artwork</button>
             </div>
           </div>
         </div>
 
         <div class="col-md-4 mb-4">
           <div class="card">
-            <img src="Assets/MandyKoh_S10205879_ASG1_TurnAround_edited.jpg" class="card-img-top" alt="Character turnaround artwork">
+            <img src="Assets/PortfolioCover.png" class="card-img-top" alt="Art Portfolio">
             <div class="card-body">
-              <h5 class="card-title">Character Turnaround</h5>
-              <p class="card-text">Character Design</p>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#characterTurnaroundModal">View Artwork</button>
+              <h5 class="card-title">Art Portfolio</h5>
+              <p class="card-text">Art Portfolio</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#PortfolioModal">View Artwork</button>
             </div>
           </div>
         </div>
 
         <div class="col-md-4 mb-4">
           <div class="card">
-            <img src="Assets/Google Theme Template.png" class="card-img-top" alt="Google theme design">
+            <img src="Assets/AgriG8_Artwork.png" class="card-img-top" alt="AgriG8 Landscape">
             <div class="card-body">
-              <h5 class="card-title">Google Theme</h5>
-              <p class="card-text">Visual Design</p>
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#googleThemeModal">View Artwork</button>
+              <h5 class="card-title">AgriG8 Client Landscape</h5>
+              <p class="card-text">AgriG8 Collection</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AgriG8Modal">View Artwork</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+<!-- Art Design Document Gallery -->
+<div class="modal fade" id="ADDModal" tabindex="-1" aria-labelledby="ADDModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl artwork-modal-dialog">
+    <div class="modal-content artwork-modal-content">
+      <div class="modal-header border-0">
+        <h2 class="modal-title fs-4" id="ADDModalLabel">Art Design Document</h2>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close Art Design Document gallery"></button>
+      </div>
+      <div class="modal-body pt-0">
+        <div id="ADDCarousel" class="carousel slide" data-bs-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="artwork-pdf-slide">
+                <iframe src="Assets/BSD ADD.pdf#view=Fit" title="BSD Art Design Document" class="artwork-pdf-viewer"></iframe>
+                <p class="mb-0 mt-3">PDF not loading? <a href="Assets/BSD ADD.pdf" target="_blank">Open the Art Design Document in a new tab.</a></p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</div>
 
-<!-- By-Product Illustrations Gallery -->
+<!-- Art Portfolio Gallery -->
+<div class="modal fade" id="PortfolioModal" tabindex="-1" aria-labelledby="PortfolioModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl artwork-modal-dialog">
+    <div class="modal-content artwork-modal-content">
+      <div class="modal-header border-0">
+        <h2 class="modal-title fs-4" id="PortfolioModalLabel">Art Portfolio</h2>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close Art Portfolio gallery"></button>
+      </div>
+      <div class="modal-body pt-0">
+        <div id="PortfolioCarousel" class="carousel slide" data-bs-interval="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="artwork-pdf-slide">
+                <iframe src="Assets/Portfolio.pdf#view=Fit" title="Portfolio PDF" class="artwork-pdf-viewer"></iframe>
+                <p class="mb-0 mt-3">PDF not loading? <a href="Assets/Portfolio.pdf" target="_blank">Open the portfolio in a new tab.</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- AgriG8 Gallery -->
 <div class="modal fade" id="byProductModal" tabindex="-1" aria-labelledby="byProductModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-xl artwork-modal-dialog">
     <div class="modal-content artwork-modal-content">
@@ -239,14 +286,21 @@
       <div class="modal-body pt-0">
         <div id="byProductCarousel" class="carousel slide" data-bs-interval="false">
           <div class="carousel-inner">
+
             <div class="carousel-item active">
-              <img src="Assets/By-Product Illustrations.png" class="d-block artwork-carousel-image" alt="By-Product illustrations">
+              <img src="Assets/AgriG8_Artwork.png" class="d-block artwork-carousel-image" alt="Landscape Final">
             </div>
             <div class="carousel-item">
               <div class="artwork-pdf-slide">
-                <iframe src="Assets/Portfolio.pdf#view=Fit" title="Portfolio PDF" class="artwork-pdf-viewer"></iframe>
-                <p class="mb-0 mt-3">PDF not loading? <a href="Assets/Portfolio.pdf" target="_blank">Open the portfolio in a new tab.</a></p>
+                <iframe src="Assets/AgriG8_Artwork.pdf#view=Fit" title="AgriG8_Artwork PDF" class="artwork-pdf-viewer"></iframe>
+                <p class="mb-0 mt-3">PDF not loading? <a href="Assets/AgriG8_Artwork.pdf" target="_blank">Open the artwork in a new tab.</a></p>
               </div>
+            </div>
+            <div class="carousel-item">
+              <img src="Assets/AgriG8Farm.png" class="d-block artwork-carousel-image" alt="AgriG8 Farm App">
+            </div>
+            <div class="carousel-item">
+              <img src="Assets/By-Product Illustrations.png" class="d-block artwork-carousel-image" alt="By-Product illustrations">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#byProductCarousel" data-bs-slide="prev">
@@ -256,76 +310,6 @@
           <button class="carousel-control-next" type="button" data-bs-target="#byProductCarousel" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next artwork</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Character Turnaround Gallery -->
-<div class="modal fade" id="characterTurnaroundModal" tabindex="-1" aria-labelledby="characterTurnaroundModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl artwork-modal-dialog">
-    <div class="modal-content artwork-modal-content">
-      <div class="modal-header border-0">
-        <h2 class="modal-title fs-4" id="characterTurnaroundModalLabel">Character Turnaround</h2>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close Character Turnaround gallery"></button>
-      </div>
-      <div class="modal-body pt-0">
-        <div id="characterTurnaroundCarousel" class="carousel slide" data-bs-interval="false">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="Assets/MandyKoh_S10205879_ASG1_TurnAround_edited.jpg" class="d-block artwork-carousel-image" alt="Character turnaround artwork">
-            </div>
-            <div class="carousel-item">
-              <div class="artwork-pdf-slide">
-                <iframe src="Assets/Portfolio.pdf#view=Fit" title="Portfolio PDF" class="artwork-pdf-viewer"></iframe>
-                <p class="mb-0 mt-3">PDF not loading? <a href="Assets/Portfolio.pdf" target="_blank">Open the portfolio in a new tab.</a></p>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#characterTurnaroundCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous item</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#characterTurnaroundCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next item</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Google Theme Gallery -->
-<div class="modal fade" id="googleThemeModal" tabindex="-1" aria-labelledby="googleThemeModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl artwork-modal-dialog">
-    <div class="modal-content artwork-modal-content">
-      <div class="modal-header border-0">
-        <h2 class="modal-title fs-4" id="googleThemeModalLabel">Google Theme</h2>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close Google Theme gallery"></button>
-      </div>
-      <div class="modal-body pt-0">
-        <div id="googleThemeCarousel" class="carousel slide" data-bs-interval="false">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="Assets/Google Theme Template.png" class="d-block artwork-carousel-image" alt="Google theme design">
-            </div>
-            <div class="carousel-item">
-              <div class="artwork-pdf-slide">
-                <iframe src="Assets/Portfolio.pdf#view=Fit" title="Portfolio PDF" class="artwork-pdf-viewer"></iframe>
-                <p class="mb-0 mt-3">PDF not loading? <a href="Assets/Portfolio.pdf" target="_blank">Open the portfolio in a new tab.</a></p>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#googleThemeCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous item</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#googleThemeCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next item</span>
           </button>
         </div>
       </div>
