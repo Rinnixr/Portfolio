@@ -126,7 +126,9 @@ if (reduceMotion || !('IntersectionObserver' in window)) {
         observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.12 });
+  // Project pages can contain very long sections. Reveal them when any part
+  // enters the viewport so the section cannot remain hidden indefinitely.
+  }, { threshold: 0 });
 
   revealTargets.forEach((element) => revealObserver.observe(element));
 }

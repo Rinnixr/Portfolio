@@ -29,7 +29,19 @@
     }
     .project-meta dt { color: #fff; font-weight: 700; margin-bottom: 0.2rem; }
     .project-meta dd { color: rgba(255, 255, 255, 0.72); margin-bottom: 1.25rem; }
-    .project-section { max-width: 900px; }
+    .project-meta { margin-left: 0; margin-right: 0; }
+    .project-meta > [class*="col"]:first-child { padding-left: 0; }
+    .project-image {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      max-height: 500px;
+      margin: 1.5rem 0;
+      border-radius: 12px;
+      object-fit: contain;
+      object-position: center;
+    }
   </style>
 </head>
 <body class="bg-dark text-light">
@@ -66,8 +78,7 @@
             </iframe>
         </div>
 
-      <div class="project-section">
-        <h1 class="display-5 mb-3">BattleShowdown: Gambit</h1>
+      <h1 class="display-5 mb-3">BattleShowdown: Gambit</h1>
         <p class="lead mb-5">2D competitive multiplayer platform shooter</p>
 
         <div class="row g-4 mb-5 project-meta" aria-label="Project details">
@@ -230,8 +241,6 @@
           <li>Produced and directed more than 100 game assets; coordinated external IP and NFT partnerships; and conducted continuous playtesting.</li>
           <li>Maintained a weekly live-service release cycle, taking content from <strong>concept &rarr; design &rarr; production &rarr; Unity implementation &rarr; testing &rarr; release</strong>.</li>
         </ul>
-      </div>
-
       <a href="https://rinnixr.github.io/Portfolio/" class="btn btn-outline-light mt-4">← Back to Projects</a>
     </div>
   </section>
