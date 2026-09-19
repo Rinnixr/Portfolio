@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Shinwa - Project Spotlight</title>
+  <title>Nana Carnival - Project Spotlight</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
@@ -26,6 +26,21 @@
       width: 100%;
       border-radius: 12px;
       box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+    .project-meta dt { color: #fff; font-weight: 700; margin-bottom: 0.2rem; }
+    .project-meta dd { color: rgba(255, 255, 255, 0.72); margin-bottom: 1.25rem; }
+    .project-meta { margin-left: 0; margin-right: 0; }
+    .project-meta > [class*="col"]:first-child { padding-left: 0; }
+    .project-image {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      max-height: 500px;
+      margin: 1.5rem 0;
+      border-radius: 12px;
+      object-fit: contain;
+      object-position: center;
     }
   </style>
 </head>
@@ -64,33 +79,113 @@
         </div>
 
       <h1 class="display-5 mb-3">Nana Carnival</h1>
-      <p class="lead"> An immersive VR carnival game created by Nana Studios, a group consisting of Jolie Ng, Evan Talavera, Muhammad Nur Syakir, and myself.</p>
+      <p class="lead mb-5">Immersive VR carnival experience designed around accessibility, comfort, and short-form play.</p>
 
-        <p>Due to the current global situation, many wide scale events/activities have been put to a halt for roughly 2 years.<br>
-          This includes leisure entertainment such as concerts, carnivals and conventions.<br>
-          Our team saw an opportunity in this and wanted to create a VR game that will be able to bring one of such widely missed events back into our daily lives while also remaining responsible.</p>
+      <div class="row g-4 mb-5 project-meta" aria-label="Project details">
+        <div class="col-md-4"><dl><dt>Platform</dt><dd>Oculus VR</dd><dt>Engine</dt><dd>Unity</dd><dt>Tools Used</dt><dd>Unity, C#, Autodesk Maya, Mixamo, Photoshop, Procreate, Clip Studio Paint, Firebase</dd></dl></div>
+        <div class="col-md-4"><dl><dt>Duration</dt><dd>19 January 2022 &ndash; 18 February 2022</dd><dt>Completion</dt><dd>2022</dd><dt>School</dt><dd>Ngee Ann Polytechnic</dd></dl></div>
+        <div class="col-md-4"><dl><dt>Course</dt><dd>Immersive Media &mdash; Year 2, Semester 2 Integrated Project</dd><dt>Team Size</dt><dd>5<br><span class="small">1 Game / Level Designer &amp; Producer, 1 2D Artist, 1 3D Artist, 1 Programmer, 1 non-contributing member</span></dd><dt>Roles</dt><dd>Game / Level Designer<br>Producer</dd></dl></div>
+      </div>
 
-      <h3 class="mt-4">Design Rationale</h3>
-      <p>With this is mind, we created Nana Carnival, an immersive VR game that brings players into a virtual fairground for them to play in. All mini games within Nana Carnival are similar to real-life carnival mini games, giving players a sense of familiarity. </p>
-      <p>Nana Carnival was created without an end game in mind. Players can replay all mini games as many times as they want, placing themselves as high as possible on the leaderboard, before deciding to call it a day. This is to provide the same concept as a real-life carnival where you can replay games as many times as you want as long as you have a ticket. Each mini game also has it's own unique leaderboard, meaning players can place differently in each mini game, and that the leaderboard is not an overall score board for the whole game.</p>
-      <p>For this game, I contributed in the story creation, level design, prop placement, some 3d modeling, animation, UI design and 3D model sourcing online.</p>
+      <p class="mb-5">Game design, project proposal and Game Design Document, game mechanics, experience design, level design, player flow, VR locomotion, accessibility design, UI/UX design, asset integration, environmental composition, prop placement, 3D modelling, texturing, animation editing, C# scripting, playtesting, and production coordination.</p>
 
-      <h4 class="mt-5">Key Features</h4>
-      <ul>
-        <li>3D Surround Audio</li>
-        <li>Story Based, Free Exploration</li>
-        <li>Designed with Color-Deficiency & Lower-Limb in Mind</li>
-        <li>Original Assets</li>
-      </ul>
+      <h2 class="h3 mt-5">Overview</h2>
+      <p><em>Nana Carnival</em> was a one-month VR project created for Ngee Ann Polytechnic's Year 2 Semester 2 Integrated Project, which combined the skills and modules covered throughout the semester into a single team production.</p>
+      <p>The project was developed during the COVID-19 period, when large-scale leisure activities such as carnivals, concerts, and conventions had been heavily restricted. Our team used this as the basis for an experience that could recreate some of the familiarity and enjoyment of visiting a carnival while allowing players to participate from home.</p>
+      <p>I worked as the project's <strong>Game / Level Designer and Producer</strong> and was responsible for designing the overall game and player experience. I wrote the initial <strong>project proposal and Game Design Document</strong>, defining the concept, game mechanics, player experience, level structure, VR interactions, accessibility considerations, UI/UX, and intended visual and experiential direction before carrying those decisions through production.</p>
+      <p>I also handled the integration of the team's assets into Unity, designed the carnival environment and player flow, contributed original 3D assets, implemented one of the four mini-games in C#, and coordinated the project throughout its one-month development period.</p>
+      <p>The finished experience contained four replayable carnival mini-games within a freely explorable virtual fairground, built using assets created specifically for the project rather than externally sourced 3D models.</p>
 
-      <h4 class="mt-5">Tools & Technologies</h4>
-      <ul>
-        <li>Unity Engine (3D)</li>
-        <li>C# Scripting</li>
-        <li>Photoshop, Procreate & Clip Studio Paint</li>
-        <li>Autodesk Maya (3D Modeling)</li>
-        <li>Mixamo (3D Animations)</li>
-      </ul>
+      <h2 class="h3 mt-5">Project Design Goals</h2>
+      <ul><li>Recreate the familiarity and enjoyment of a physical carnival within an immersive VR environment.</li><li>Design the experience around an approximately <strong>15-minute play session</strong> to reduce VR fatigue and motion discomfort.</li><li>Allow players to freely explore the carnival and replay mini-games without requiring a traditional end state.</li><li>Reproduce recognizable carnival activities using interactions that were intuitive in VR.</li><li>Design locomotion and interaction systems that accommodated different physical abilities and play setups.</li><li>Ensure important visual information remained readable for players with colour-vision deficiencies.</li><li>Establish a consistent experience using <strong>original assets created specifically for the project</strong>.</li><li>Balance the scope of four mini-games and an explorable environment against a development period of approximately one month.</li></ul>
+
+      <h2 class="h3 mt-5">Game Design &amp; Documentation</h2>
+      <p>I designed <em>Nana Carnival</em> from its initial concept and documented the intended experience through the project's <strong>proposal and Game Design Document</strong>.</p>
+      <p>The documentation defined how the carnival would function as a complete experience, including its core concept, mini-games, interaction systems, player flow, level layout, locomotion, accessibility considerations, UI/UX, visual direction, and overall scope.</p>
+      <p>This provided the team with a shared reference for production and allowed the individual art and programming disciplines to work toward the same intended player experience.</p>
+      <p>Rather than designing each feature independently during implementation, I established how the systems were intended to work together before carrying the design through level production, asset integration, playtesting, and iteration.</p>
+
+      <h2 class="h3 mt-5">Experience &amp; Game Design</h2>
+      <p>I was responsible for defining how players would experience <em>Nana Carnival</em>, from entering the environment and navigating the fairground to understanding and interacting with each attraction.</p>
+      <p>Rather than giving the game a traditional ending, the experience was structured similarly to visiting a physical carnival. Players could explore at their own pace, replay any mini-game, improve their scores, and compare their performance on individual leaderboards before deciding when to leave.</p>
+      <p>The four mini-games were:</p>
+      <ul><li><strong>Fishing</strong></li><li><strong>Duck Shooting</strong></li><li><strong>Hit the Target</strong> &mdash; throwing baseballs at stacked cans</li><li><strong>Water Gun</strong> &mdash; following a moving target with a water gun</li></ul>
+      <p>Each attraction maintained its own leaderboard rather than contributing toward a single overall score. This allowed players to perform differently across different activities and encouraged replaying individual games.</p>
+      <p>I designed the mechanics and interaction expectations for the overall experience and also programmed the <strong>Hit the Target</strong> mini-game in C#.</p>
+
+      <h2 class="h3 mt-5">VR Locomotion &amp; Player Comfort</h2>
+      <p>Player comfort was an important part of the project's design.</p>
+      <p>Players could navigate the carnival using two different movement methods. They could use controller-based joystick movement for continuous navigation or use a raycast-based teleportation system for more comfortable movement.</p>
+      <p>I also incorporated <strong>snap rotation</strong>, allowing players to rotate virtually using the controllers rather than physically turning their bodies. This reduced the amount of real-world movement required and helped players using wired VR hardware avoid becoming tangled in headset cables.</p>
+      <p>The carnival itself was designed as a contained environment. Players were given enough space to explore while environmental structures and layout decisions naturally established the boundaries of the playable area.</p>
+      <p>Through repeated playtesting, we also reduced the intended experience length to approximately <strong>15 minutes</strong> to limit fatigue and motion sickness during longer VR sessions.</p>
+
+      <h2 class="h3 mt-5">Level Design &amp; Environment</h2>
+      <p>I designed the complete carnival layout, including the positioning of attractions, booths, environmental boundaries, player routes, and supporting props.</p>
+      <p>The goal was to create an environment that felt open enough to resemble a fairground while still naturally directing players toward the four playable attractions.</p>
+      <p>Rather than relying heavily on artificial barriers, I used the carnival's physical layout and environmental composition to contain the player and communicate where they could explore.</p>
+      <p>I was also responsible for <strong>prop placement throughout the entire carnival</strong>, using environmental details to establish atmosphere, fill visual gaps, support navigation, and make each attraction feel like part of a cohesive space.</p>
+      <p>The environment was designed around assets produced specifically for the project, allowing the level and visual presentation to be developed together rather than adapting the design around externally sourced asset packs.</p>
+
+      <h2 class="h3 mt-5">Accessibility Design</h2>
+      <p>Accessibility considerations were incorporated into both the visual design and physical interaction requirements of the experience.</p>
+      <p>For players with <strong>colour-vision deficiencies</strong>, we selected colour combinations that remained visually distinguishable without making the environment appear muddy or compromising its overall visual direction.</p>
+      <p>The environment was also designed with <strong>seated and wheelchair users</strong> in mind. Interactive surfaces such as counters were positioned so that players did not need to stand in order to reach important objects or participate in the mini-games.</p>
+      <p>Controller-based locomotion and snap rotation further reduced the amount of physical movement required, allowing players to navigate and turn within the virtual environment while remaining seated.</p>
+      <p>Several of these decisions were introduced or refined following user testing, making accessibility part of the iterative design process rather than a feature added only at the end of development.</p>
+
+      <h2 class="h3 mt-5">UI / UX Design</h2>
+      <p>I designed and integrated the player-facing UI and information systems throughout the experience.</p>
+      <p>Because <em>Nana Carnival</em> was a VR project, I focused on using <strong>diegetic interfaces</strong> where possible so that instructions and information felt integrated into the carnival rather than appearing as traditional flat menus.</p>
+      <p>My UI/UX work included:</p>
+      <ul><li>The player sign-up interface</li><li>Mini-game instructions</li><li>Score displays</li><li>Leaderboards</li><li>Supporting instructional and informational interfaces</li><li>UI placement and integration within the 3D environment</li></ul>
+      <p>The interface design needed to communicate game rules and player information clearly without disrupting immersion or overwhelming players who were already navigating an unfamiliar VR environment.</p>
+
+      <h2 class="h3 mt-5">Leaderboards &amp; Player Accounts</h2>
+      <p>Each mini-game maintained a separate leaderboard, allowing players to compare their performance in individual carnival activities rather than combining results into a single overall ranking.</p>
+      <p>Player login information and leaderboard data were stored using <strong>Firebase</strong>, allowing scores to persist and be compared between players.</p>
+      <p>My contribution focused on the design and player-facing experience of these systems rather than the underlying database implementation.</p>
+
+      <h2 class="h3 mt-5">Original Assets &amp; 3D Production</h2>
+      <p>The project was developed using <strong>original assets created specifically for Nana Carnival</strong>, rather than relying on externally sourced 3D models.</p>
+      <p>The team's 2D and 3D artists handled their respective primary asset-production responsibilities, while I also contributed directly to the creation of several environment and gameplay assets.</p>
+      <p>I modelled assets in Autodesk Maya including <strong>stacked cans, roads, signboards, balls</strong>, and additional supporting objects used throughout the environment.</p>
+      <p>I also worked on texturing and visual elements used within the project's menus and interfaces.</p>
+      <p>Developing the assets specifically for the project allowed the game design, environment layout, and visual direction to remain consistent rather than having the experience dictated by the limitations of premade asset packs.</p>
+
+      <h2 class="h3 mt-5">Animation</h2>
+      <p>Character animation was produced using Mixamo as a starting point.</p>
+      <p>I worked with the downloaded animations by <strong>splicing and combining animation sequences</strong> so that transitions and character behaviour appeared more natural within the game.</p>
+      <p>This allowed existing motion data to be adapted to the requirements of the experience rather than being used unchanged.</p>
+
+      <h2 class="h3 mt-5">Unity Integration</h2>
+      <p>I handled the integration of assets into Unity and was responsible for ensuring that the different visual, gameplay, and interface components worked together as a coherent experience.</p>
+      <p>My work included:</p>
+      <ul><li>Integrating completed 2D and 3D assets</li><li>Setting up environmental props and layouts</li><li>Integrating UI elements within the VR environment</li><li>Adjusting asset placement and presentation</li><li>Supporting gameplay implementation with temporary assets when final production assets were unavailable</li><li>Implementing the Hit the Target mini-game using C#</li></ul>
+      <p>Because I had authored the project's design documentation and level design, I was also able to review incoming assets directly against the intended experience and adjust their implementation where necessary.</p>
+      <p>Asset integration became particularly important because the production pipeline frequently created dependencies between the art and implementation work.</p>
+
+      <h2 class="h3 mt-5">Production &amp; Team Workflow</h2>
+      <p>As Producer, I helped coordinate the project across a five-person team consisting of a 2D artist, 3D artist, programmer, myself as Game / Level Designer and Producer, and one member who did not actively contribute to production.</p>
+      <p>The project had a development window of only <strong>one month</strong>, which made dependency management and scope control particularly important.</p>
+      <p>The Game Design Document acted as the project's design reference while I coordinated how the game's mechanics, environment, UI, assets, and implementation came together during production.</p>
+      <p>One recurring challenge was that the 2D and 3D art backlog could become overloaded, leaving the programmer and me waiting on assets required for implementation. To prevent these dependencies from stopping development, we used <strong>placeholder assets</strong> so gameplay and integration work could continue before final artwork was available.</p>
+      <p>I also contributed outside my primary design responsibilities where necessary, including 3D asset production, texturing, animation preparation, scripting, and implementation.</p>
+      <p>This workflow allowed the team to continue progressing despite bottlenecks and the uneven distribution of work across the group.</p>
+
+      <h2 class="h3 mt-5">User Testing &amp; Iteration</h2>
+      <p>We conducted multiple rounds of user testing and playtesting throughout development.</p>
+      <p>Testing directly influenced several major design decisions. Feedback and observations led us to:</p>
+      <ul><li>Reduce the intended play session to approximately 15 minutes to minimise fatigue and VR discomfort.</li><li>Incorporate teleportation alongside continuous joystick locomotion.</li><li>Use snap rotation to reduce physical movement and improve comfort.</li><li>Adjust interactive objects and counters so they remained accessible from a seated position.</li><li>Consider colour differentiation for players with colour-vision deficiencies.</li><li>Refine the overall experience and interaction flow based on how players behaved within the VR environment.</li></ul>
+      <p>The testing process was particularly important because several usability concerns were difficult to identify through design documentation alone and became more apparent once players experienced the game in VR.</p>
+
+      <h2 class="h3 mt-5">Project Outcome</h2>
+      <p><em>Nana Carnival</em> received an <strong>A grade</strong> and achieved the highest result among the ten teams participating in the Integrated Project.</p>
+      <p>The project was later selected for continued display by Ngee Ann Polytechnic. It was showcased at a school Open House after graduation and displayed on monitors around the Immersive Media classroom levels as an example of student work.</p>
+      <p>The project demonstrated how a relatively short VR experience could combine free exploration, familiar carnival interactions, accessibility considerations, original asset production, and replayable mini-games within a tightly constrained production period.</p>
+
+      <h2 class="h3 mt-5">Key Contributions</h2>
+      <ul><li>Served as <strong>Game / Level Designer and Producer</strong> for a five-person VR project completed within one month.</li><li>Authored the project's <strong>initial proposal and Game Design Document</strong>, defining the complete game concept, systems, player experience, level structure, UI/UX, accessibility considerations, and production scope.</li><li>Designed the overall player experience, carnival layout, booths, environmental boundaries, player flow, and four mini-game concepts.</li><li>Designed the experience around <strong>original assets created specifically for the project</strong>, rather than externally sourced 3D models.</li><li>Designed VR locomotion around joystick movement, teleportation, and snap rotation to improve comfort and accessibility.</li><li>Designed for seated and wheelchair users by ensuring important interactions remained physically reachable without requiring players to stand.</li><li>Incorporated colour-vision accessibility considerations into the project's visual design.</li><li>Designed and integrated the project's UI/UX, including diegetic instructions, sign-up interfaces, scoring, and leaderboards.</li><li>Programmed the <strong>Hit the Target</strong> baseball-and-can mini-game in C#.</li><li>Modelled and textured supporting 3D assets and handled prop placement throughout the carnival.</li><li>Edited and combined Mixamo animation sequences to produce more natural character animation.</li><li>Managed Unity asset integration and used placeholder workflows to keep development moving despite production bottlenecks.</li><li>Conducted repeated playtesting and used feedback to improve accessibility, locomotion, play duration, and player comfort.</li><li>Helped deliver the highest-scoring project among ten participating teams, with the completed experience later selected for school showcases.</li></ul>
 
       <a href="https://rinnixr.github.io/Portfolio/" class="btn btn-outline-light mt-4">← Back to Projects</a>
     </div>
