@@ -2,118 +2,111 @@
 <html lang="en">
 <head>
   <base href="/">
-  <title>Shinwa - Project Spotlight</title>
+  <title>Acquit - Project Spotlight</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Electrolize&family=Norican&family=Nunito&family=Sriracha&display=swap" rel="stylesheet">  
-  <!-- Favicon -->
-   <link rel="shortcut icon" type="image/png" href="Assets/heart.png">
-
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Electrolize&family=Norican&family=Nunito&family=Sriracha&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="Assets/heart.png">
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    .banner-media {
-      max-height: 500px;
-      object-fit: cover;
-      width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-    }
+    html { scroll-behavior: smooth; }
+    .project-meta dt { color: #fff; font-weight: 700; margin-bottom: .2rem; }
+    .project-meta dd { color: rgba(255,255,255,.72); margin-bottom: 1.25rem; }
+    .project-meta { margin-left: 0; margin-right: 0; }
+    .project-meta > [class*="col"]:first-child { padding-left: 0; }
+    .project-image { display:block; width:100%; height:auto; max-height:650px; margin:1.5rem 0; border-radius:12px; object-fit:contain; object-position:center; }
   </style>
 </head>
 <body class="bg-dark text-light">
-
   <div id="twinkle-container"></div>
+  <nav id="navbar" class="navbar text-white navbar-expand-lg fixed-top"><div class="container-fluid">
+    <a class="navbar-brand" href="#">The Curio Closet</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link" href="/#projects">Projects</a></li><li class="nav-item"><a class="nav-link" href="/#about">About Me</a></li><li class="nav-item"><a class="nav-link" href="/#contact">Contact Me</a></li>
+    </ul></div>
+  </div></nav>
 
-  <!-- Navbar -->
-  <nav id="navbar" class="navbar text-white navbar-expand-lg fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">The Curio Closet</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="/#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="/#about">About Me</a></li>
-          <li class="nav-item"><a class="nav-link" href="/#contact">Contact Me</a></li>
-        </ul>
-      </div>
+  <section id="summary" class="pt-5 mt-5"><div class="container">
+    <div class="mb-4"><iframe class="w-100 rounded shadow" src="https://drive.google.com/file/d/11HQj909GCGm7ufO-VeRm9G0I5POgtJQa/preview" allow="autoplay" allowfullscreen style="aspect-ratio:16 / 9; border:none;" title="Acquit project presentation"></iframe></div>
+    <h1 class="display-5 mb-3">Acquit</h1>
+    <p class="lead mb-5">A single-player courtroom strategy card game built around investigation, hand-building, probability management, and tactical argument resolution.</p>
+
+    <div class="row g-4 mb-5 project-meta" aria-label="Project details">
+      <div class="col-md-4"><dl><dt>Format</dt><dd>Physical Card Game</dd><dt>Genre</dt><dd>Single-Player Strategy / Role-Playing Card Game</dd><dt>Tools Used</dt><dd>Figma, Procreate, PowerPoint</dd></dl></div>
+      <div class="col-md-4"><dl><dt>Duration</dt><dd>May 2025 &ndash; June 2025</dd><dt>Completion</dt><dd>2025</dd><dt>Team Size</dt><dd>6</dd></dl></div>
+      <div class="col-md-4"><dl><dt>School</dt><dd>DigiPen Institute of Technology Singapore</dd><dt>Course</dt><dd>Introduction to Game Design<br>Year 1, Trimester 3</dd><dt>Role</dt><dd>Game Designer / Art Lead</dd></dl></div>
     </div>
-  </nav>
+    <p class="mb-5">Core systems design, card mechanics, probability balancing, D20 resolution, scoring, win conditions, Argument difficulty balancing, Motion design, Evidence and Tactic limits, physical prototyping, playtesting, visual direction, card templates, UI design, iconography, rulebook design, table layout, logo design, and production leadership.</p>
 
-  <!-- Project Content -->
-  <section id="summary" class="pt-5 mt-5">
-    <div class="container">
-        <div class="mb-4">
-            <iframe
-                class="w-100 rounded shadow"
-                src="https://drive.google.com/file/d/11HQj909GCGm7ufO-VeRm9G0I5POgtJQa/preview"
-                style="aspect-ratio: 16 / 9; border: none;">
-            </iframe>
-        </div>
+    <h2 class="h3 mt-5">Overview</h2>
+    <p><em>Acquit</em> was a single-player physical strategy card game developed for Introduction to Game Design during my first year at DigiPen Singapore. Players take the role of a defence attorney preparing and presenting a case in court: first investigating and constructing a hand, then using those limited resources to counter Arguments and earn enough Persuasion to secure an acquittal.</p>
+    <p>The final Print and Play game contains approximately 40 cards across five functional types: Investigation, Motion, Evidence, Tactic, and Argument, plus a printable D20 template. I worked as the project's <strong>Game Designer and Art Lead</strong>. Another teammate and I handled most mechanics design, while I led the numerical balancing, D20 system, card distribution, victory conditions, Argument difficulty, physical prototyping, and visual direction.</p>
+    <p>I designed every card template and produced approximately <strong>85% of the final visual assets</strong>, including the rulebook, icons, symbols, logo, table layout, and supporting interface elements. The project received an <strong>A-</strong>, the highest grade in the class.</p>
+    <img src="Assets/Acquit.png" class="project-image" alt="Acquit card-game artwork and components">
 
+    <h2 class="h3 mt-5">Project Design Goals</h2>
+    <ul><li>Translate courtroom preparation and argument into an understandable physical strategy game.</li><li>Give players meaningful decisions before Trial instead of resolving everything through dice rolls.</li><li>Use uncertainty without making success feel entirely luck-based.</li><li>Support multiple playstyles through Evidence, Tactics, and Motion effects.</li><li>Create a short, replayable experience that newcomers to tabletop games could set up and play without guidance.</li><li>Build a complete visual identity with original artwork, layouts, and print-ready documentation.</li></ul>
 
-      <h1 class="display-5 mb-3">Acquit</h1>
-      <p class="lead">A Single-Player Courtroom Strategy Card Game</p>
+    <h2 class="h3 mt-5">Design Rationale</h2>
+    <p>The assigned theme was <em>based on a true story</em>. Our team used the O.J. Simpson murder trial as thematic material, drawing from recognizable details such as the gloves, Bronco search handling, evidence bags, witness timelines, and evidence-handling concerns.</p>
+    <p>Rather than reproduce courtroom procedure exactly, we used the legal theme to frame deck building, resource preparation, modifiers, risk management, and difficulty checks. Early courtroom research was useful, but strict realism added complexity without creating stronger decisions. The final design prioritised strategic readability and playability over simulation accuracy.</p>
 
-      <p>Acquit is a physical role-playing strategy card game where players take on the role of a defence attorney preparing and presenting a case in court.<br> Build your case during the pre-trial phase by investigating, gathering evidence, and preparing tactics before entering the courtroom, where your choices directly influence your chances of countering each argument.<br> 
-        Plan your case carefully, manage your limited resources, and persuade the court to secure an acquittal.</p>
+    <h2 class="h3 mt-5">Core Game Structure</h2>
+    <p>The game is built around two phases: <strong>Pre-Trial &rarr; Trial</strong>. During Pre-Trial, players manipulate the Discovery Deck and assemble the strongest hand they can without knowing exactly what they will need. During Trial, preparation is largely over: players choose when to spend their Evidence and Tactics against a sequence of Arguments.</p>
+    <p>This created the central philosophy of the game: <strong>preparation improves probability, but never completely removes uncertainty.</strong></p>
 
-      <h3 class="mt-4">Design Rationale</h3>
-      <p>Acquit was designed around translating the process of preparing and arguing a legal case into a strategic card game. To represent this, we divided the game into two distinct phases: Pre-Trial and Trial.</p>
-      <p>During Pre-Trial, players use Investigation cards to build their collection of Evidence and Tactics. This creates a preparation and deck-building stage where the player must consider what resources may be useful later. During the Trial, these resources are then used alongside a chosen Motion to counter Arguments, modifying dice rolls and giving the player additional ways to respond to each situation.</p>
-      <p>The combination of hand-building, dice rolls, evidence matching, argument difficulty and set bonuses was designed to create a balance between preparation, decision-making and uncertainty. Rather than relying entirely on luck, players can improve their odds through the decisions they make before and during the trial.</p> <br>
+    <h2 class="h3 mt-5">Pre-Trial: Investigation &amp; Hand-Building</h2>
+    <p>Pre-Trial lasts five turns, corresponding to the five Investigation cards: <strong>Private Investigator, Paper Trail, Police Report, Surveillance Footage,</strong> and <strong>Anonymous Tip</strong>. Their effects let players draw, peek, discard, retain, and reshuffle cards from the Discovery Deck.</p>
+    <p>Rather than simply drawing random cards, players evaluate modifiers, applicability, flexibility, possible combinations, and their intended Motion. By the end of the phase, players normally have a hand of approximately 15 cards, although their selected Motion can alter that structure.</p>
 
-      <p>For this project, I took primary responsibility for developing the game's core systems and mechanics as part of a 6-person team. I designed the interactions between the different card types, structured the scoring systems, and worked extensively on balancing and playtesting the game. I also contributed to refining the overall player flow and authored the rules required to turn the concept into a complete and playable physical card game.</p><br>
-      <p>No AI-generated artwork was used in this project. I was responsible for the overall visual design and produced the majority of the game's assets, with additional assets created by my teammates.</p>
+    <h2 class="h3 mt-5">Evidence, Tactics &amp; Motions</h2>
+    <p><strong>Evidence</strong> is the primary way to improve the chance of winning Arguments. Each card pairs a thematic case detail with a dice modifier and compatible Arguments. Strong specialist cards can offer bonuses up to +4, while weaker but flexible cards remain useful across more situations. I balanced this relationship between strength and applicability so the player always had meaningful trade-offs.</p>
+    <p><strong>Tactics</strong> provide single-use, rule-breaking options: reusing a played card, rerolling after a loss, changing Persuasion rewards or Difficulty Classes, and allowing additional Evidence. The final deck includes <em>Expert Witness</em>, <em>Objection</em>, <em>Surprise Witness</em>, <em>Re-frame Argument</em>, and <em>Cross-Examination</em>. I established limits on Evidence and Tactics committed to an Argument so players could not trivialise every check through modifier stacking.</p>
+    <p>Before Trial, the player chooses one Motion that remains active for the whole case: <strong>Suppress, Dismiss,</strong> or <strong>Continuance</strong>. Another designer and I co-designed these as playstyle choices&mdash;stronger but riskier, safer and more consistent, or more protective and flexible. Repeated balancing removed an initially dominant option without making the choices identical.</p>
 
-      <h4 class="mt-5">Key Features</h4>
-      <ul>
-        <li>Deck Building</li>
-        <li>Single Player</li>
-        <li>Original Design</li>
-      </ul>
+    <h2 class="h3 mt-5">Trial &amp; D20 Resolution</h2>
+    <p>During Trial, Arguments are revealed one at a time. To counter one, the player selects applicable Evidence and Tactics, rolls a D20, applies bonuses, and attempts to meet or exceed the Argument's Difficulty Class:</p>
+    <p class="text-center fs-5 my-4"><strong>D20 Roll + Evidence + Tactics + Motion &ge; Argument Difficulty Class</strong></p>
+    <p>I designed this system after becoming interested in probability-based checks in <em>Baldur's Gate 3</em>. The die preserves uncertainty, but every earlier decision influences the player's control over it. Investigation affects the hand; Evidence modifies rolls; Tactics break normal rules; Motions define wider strategy; and Argument DC establishes the challenge.</p>
+    <p>Winning an Argument earns Persuasion. Losing simply loses that scoring opportunity: there is no additional punishment. Early tests showed that extra failure penalties compounded too aggressively when Evidence and Tactics were already limited resources.</p>
 
-      <h4 class="mt-5">Tools & Technologies</h4>
-      <ul>
-        <li>Figma</li>
-        <li>Procreate</li>
-        <li>PowerPoint</li>
-      </ul>
+    <h2 class="h3 mt-5">Argument Difficulty, Scoring &amp; Win Condition</h2>
+    <p>I balanced every Argument Difficulty Class through playtesting. Difficulty could not be considered in isolation: it also depended on Evidence availability and strength, compatibility, Persuasion reward, set membership, and the frequency of useful Tactics.</p>
+    <p>Successful Arguments generate Persuasion, and completing every Argument in a set awards an additional set bonus. I designed the final victory threshold of <strong>20 or more Persuasion</strong> after the Argument Deck is resolved. Early versions made sets too important, so I adjusted individual rewards and set bonuses until players had several viable routes to victory.</p>
 
-      <h3 class="mt-4">Interested in Playing?</h3>
-      <p>Click here to download the print and play version!</p>
-      <a href="Assets/Acquit_Print%26Play.pdf" download="Acquit_Print&Play.pdf">Download the PDF</a>
+    <h2 class="h3 mt-5">Playtesting &amp; Balancing</h2>
+    <p>We conducted more than <strong>30 rounds of playtesting</strong> with team members, friends, family, outside players, tabletop players, and people with little or no gaming experience. I handled most numerical balancing and looked for patterns across roughly five playtests before changing values, avoiding overreaction to unusually lucky or unlucky games.</p>
+    <p>The major issues were low or inconsistent Argument DCs, difficult sets, dependence on set bonuses, a Motion outperforming the others, aggressive play being too efficient, and inconsistent hand quality. The core systems remained intact; improvements came from tuning card quantities, draws, DCs, modifiers, Persuasion, set bonuses, Motion effects, Evidence applicability, and resource limits.</p>
 
-      <p>Click here to download the rulebook!</p>
-      <a href="Assets/Acquit_RuleBook.pdf" download="Acquit_Print&Play.pdf">Download the PDF</a>
-      <br>
-      
-      <a href="/" class="btn btn-outline-light mt-4">← Back to Projects</a>
-    </div>
-  </section>
+    <h2 class="h3 mt-5">Physical Prototyping &amp; Production</h2>
+    <p>I led the physical prototyping process and pushed the team toward a playable baseline early. In a two-month project, ongoing ideation would have left little time for testing and production. Once the Pre-Trial, Trial, Evidence, Tactic, Motion, Argument, D20, and scoring systems were functional, every new idea could be assessed against an actual game.</p>
+    <p>This shifted the workflow from <em>generate another idea &rarr; reconsider direction</em> to <strong>prototype &rarr; playtest &rarr; identify a problem &rarr; adjust &rarr; test again</strong>. It was essential because the game's quality depended far more on repeated balancing than on adding mechanics.</p>
 
-  <!-- Footer -->
-  <footer class="text-white p-4 mt-5" style="background-color: #00000083;">
-    <div class="container d-flex justify-content-between align-items-center">
-      <a href="https://www.linkedin.com/in/mandyykoh/" target="_blank" class="btn text-light d-flex align-items-center">
-        <img src="Assets/LI-In-Bug.png" alt="LinkedIn" style="height: 20px; width: 20px; margin-right: 8px;">
-        LinkedIn
-      </a>
-      <p class="mb-0 text-end">&copy; 2026 Mandy's Portfolio</p>
-    </div>
-  </footer>
+    <h2 class="h3 mt-5">Art Direction &amp; Card UI</h2>
+    <p>As Art Lead, I established a courtroom and legal-document visual system using warm cream and brown tones, document-like layouts, stamped labels, paper textures, and simple monochrome iconography. The reference language included courtroom interiors, wooden furniture, case files, evidence folders, institutional seals, and typewritten documentation.</p>
+    <p>I designed all card templates and their information hierarchy: type, name, modifiers, Evidence numbers, notes, difficulty, Persuasion, compatibility, and effects. Since this was a physical game, every card functioned as an interface&mdash;there were no tooltips or expandable menus. Players needed to understand what a card does, when it can be used, and what it affects at table distance.</p>
+    <p>No AI-generated artwork was used. I produced approximately 85% of the final visual assets: card templates and layouts, icons, symbols, logo, card backs, UI, rulebook graphics, table layouts, and print-ready presentation. Two teammates contributed additional art assets.</p>
 
+    <h2 class="h3 mt-5">Rulebook &amp; Print-and-Play Onboarding</h2>
+    <p>I designed and created the two-page rulebook and the card-placement/table-layout diagrams it uses. The guide introduces every major card type, then breaks play into Phase 1: Pre-Trial and Phase 2: Trial. In final testing, people of different ages and gaming experience levels could read the rules, set up the game, understand the cards, begin playing, and complete a game without asking the team for help.</p>
+    <p>The final Print and Play package includes every card type and a printable D20. Preparing it for production required accounting for card dimensions, print readability, template consistency, cutting and assembly, fronts and backs, information density, table space, and physical handling.</p>
+
+    <h2 class="h3 mt-5">Project Outcome</h2>
+    <p><em>Acquit</em> progressed from an uncertain collection of ideas into a complete single-player physical strategy game with a defined setup, two-phase loop, approximately 40 cards, D20 resolution, multiple playstyles, resource management, Motion-based modifiers, argument scoring and set bonuses, a clear win condition, a complete rulebook, and a Print and Play edition.</p>
+    <p>Most importantly, the final documentation enabled players of different ages and gaming backgrounds to learn and play independently. The project reinforced that game design is not only about generating mechanics, but about locking decisions, building prototypes quickly, observing player behaviour, balancing connected systems, and communicating rules clearly enough that the designer no longer needs to be present.</p>
+
+    <div class="mt-5"><h2 class="h3">Play Acquit</h2><p>Download the complete Print and Play set or the rulebook.</p><a class="btn btn-outline-light me-2 mb-2" href="Assets/Acquit_Print%26Play.pdf" download="Acquit_Print_and_Play.pdf">Download Print and Play</a><a class="btn btn-outline-light mb-2" href="Assets/Acquit_RuleBook.pdf" download="Acquit_RuleBook.pdf">Download Rulebook</a></div>
+    <h2 class="h3 mt-5">Key Contributions</h2>
+    <ul><li>Served as Game Designer / Art Lead on a six-person physical card-game project.</li><li>Co-established the Pre-Trial and Trial strategic loop and designed the D20 resolution system.</li><li>Determined card distribution, draws, hand size, resource limits, scoring, and the final win condition; balanced every Argument DC.</li><li>Co-designed and balanced the Motion system, Evidence applicability, set bonuses, and multiple viable playstyles.</li><li>Conducted and evaluated more than 30 playtests, rebalancing the game without removing its core mechanics.</li><li>Led physical prototyping, established the visual direction, designed every card template and rulebook, and produced approximately 85% of final visual assets.</li></ul>
+    <a href="/" class="btn btn-outline-light mt-4">&larr; Back to Projects</a>
+  </div></section>
+
+  <footer class="text-white p-4 mt-5" style="background-color:#00000083;"><div class="container d-flex justify-content-between align-items-center"><a href="https://www.linkedin.com/in/mandyykoh/" target="_blank" class="btn text-light d-flex align-items-center"><img src="Assets/LI-In-Bug.png" alt="LinkedIn" style="height:20px;width:20px;margin-right:8px;">LinkedIn</a><p class="mb-0 text-end">&copy; 2026 Mandy's Portfolio</p></div></footer>
   <script src="script.js"></script>
 </body>
 </html>
