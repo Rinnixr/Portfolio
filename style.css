@@ -171,6 +171,11 @@ body {
   filter: brightness(1.2);
 }
 
+.recommendations-note {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
 /* General Section Styling */
 section {
     padding: 10px 0;
