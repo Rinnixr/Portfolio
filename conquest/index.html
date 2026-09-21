@@ -2,120 +2,189 @@
 <html lang="en">
 <head>
   <base href="/">
-  <title>Shinwa - Project Spotlight</title>
+  <title>Conquest - Project Spotlight</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Electrolize&family=Norican&family=Nunito&family=Sriracha&display=swap" rel="stylesheet">  
-  <!-- Favicon -->
-   <link rel="shortcut icon" type="image/png" href="Assets/heart.png">
-
+  <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Electrolize&family=Norican&family=Nunito&family=Sriracha&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="Assets/heart.png">
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    .banner-media {
-      max-height: 500px;
-      object-fit: cover;
-      width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-    }
+    html { scroll-behavior: smooth; }
+    .project-meta dt { color: #fff; font-weight: 700; margin-bottom: .2rem; }
+    .project-meta dd { color: rgba(255,255,255,.72); margin-bottom: 1.25rem; }
+    .project-meta { margin-left: 0; margin-right: 0; }
+    .project-meta > [class*="col"]:first-child { padding-left: 0; }
+    .project-image { display:block; width:100%; height:auto; max-height:650px; margin:1.5rem 0; border-radius:12px; object-fit:contain; object-position:center; }
   </style>
 </head>
 <body class="bg-dark text-light">
-
   <div id="twinkle-container"></div>
+  <nav id="navbar" class="navbar text-white navbar-expand-lg fixed-top"><div class="container-fluid">
+    <a class="navbar-brand" href="#">The Curio Closet</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link" href="/#projects">Projects</a></li><li class="nav-item"><a class="nav-link" href="/#about">About Me</a></li><li class="nav-item"><a class="nav-link" href="/#contact">Contact Me</a></li>
+    </ul></div>
+  </div></nav>
 
-  <!-- Navbar -->
-  <nav id="navbar" class="navbar text-white navbar-expand-lg fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">The Curio Closet</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
-        </ul>
-      </div>
+  <section id="summary" class="pt-5 mt-5"><div class="container">
+    <img src="Assets/Conquest.png" class="project-image" alt="Conquest board game artwork and components">
+    <h1 class="display-5 mb-3">Conquest</h1>
+    <p class="lead mb-5">A single-player positional strategy board game where players manage territory, movement, resources, and formations while predicting an Assassin's route across the kingdom.</p>
+
+    <div class="row g-4 mb-5 project-meta" aria-label="Project details">
+      <div class="col-md-4"><dl><dt>Format</dt><dd>Physical Board Game</dd><dt>Genre</dt><dd>Single-Player Positional Strategy</dd><dt>Tools Used</dt><dd>Figma, Procreate, PowerPoint</dd></dl></div>
+      <div class="col-md-4"><dl><dt>Duration</dt><dd>June 2025 &ndash; July 2025</dd><dt>Completion</dt><dd>2025</dd><dt>Team Size</dt><dd>6</dd></dl></div>
+      <div class="col-md-4"><dl><dt>School</dt><dd>DigiPen Institute of Technology Singapore</dd><dt>Course</dt><dd>Introduction to Game Design<br>Year 1, Trimester 3</dd><dt>Role</dt><dd>Game Designer / Art Lead</dd></dl></div>
     </div>
-  </nav>
+    <p class="mb-5">Game concept, systems design, map and route design, territorial control, Action Point balancing, Points of Interest, Event design, resource balancing, combat design, physical prototyping, playtesting, visual direction, board illustration, rulebook design, and Print and Play production.</p>
 
-  <!-- Project Content -->
-  <section id="summary" class="pt-5 mt-5">
-    <div class="container">
-        <div class="mb-4">
-            <iframe
-                class="w-100 rounded shadow"
-                src="https://drive.google.com/file/d/1uADwVerAfBifg5sPsR7EHdTv8X0xbSst/preview"
-                allow="autoplay"
-                allowfullscreen
-                style="aspect-ratio: 16 / 9; border: none;">
-            </iframe>
-        </div>
+    <h2 class="h3 mt-5">Overview</h2>
+    <p><em>Conquest</em> was a single-player positional strategy board game developed for Introduction to Game Design during my first year at DigiPen Singapore.</p>
+    <p>The player controls a Prince being hunted by an Assassin across a medieval kingdom. Over a maximum of eight in-game days, the player must travel between territories, establish control over the map, gather supplies, improve allied characters, and prepare a favorable combat position before confronting the Assassin.</p>
+    <p>The central design goal was to make positioning matter several turns before combat actually occurred.</p>
+    <p>Rather than treating the board as a space players simply moved across, I designed the map, enemy movement, territory economy, and formation systems to continuously influence one another. Where the player chose to travel affected the resources they could generate, where their allies could be positioned, how quickly the Assassin could reach them, and what combat options would be available later.</p>
+    <p>I worked as the project's <strong>Game Designer and Art Lead</strong>. I originated the core concept, designed the complete 29-territory map and node network, developed the territory and Point of Interest systems, designed the Event cards, balanced movement and resources, and collaborated closely with another design lead on combat, character mechanics, and the overall gameplay loop.</p>
+    <p>I also led physical prototyping and playtesting, wrote and designed the complete rulebook, assembled the Print and Play package, and produced approximately <strong>50% of the final artwork</strong>, including the entire illustrated game board.</p>
+    <p>The project received an <strong>A grade</strong> and was among the strongest projects in the class.</p>
 
+    <h2 class="h3 mt-5">My Role</h2>
+    <p>My main responsibility was making sure the game's individual systems produced a coherent strategic experience when combined.</p>
+    <p>The design team included myself, another design lead who worked closely with me on the game's core mechanics and positional systems, and another designer who initially proposed the idea of formations. The remaining three members focused primarily on art production.</p>
+    <p>I took responsibility for:</p>
+    <ul><li>Originating the game concept.</li><li>Designing the complete board layout.</li><li>Designing the node and route structure.</li><li>Establishing territorial control.</li><li>Proposing and designing Points of Interest.</li><li>Designing Event cards.</li><li>Balancing Action Point travel costs.</li><li>Balancing resources and player progression.</li><li>Collaborating on combat and character systems.</li><li>Locking design decisions.</li><li>Producing physical prototypes.</li><li>Driving playtesting.</li><li>Maintaining the overall visual direction.</li><li>Illustrating the complete board.</li><li>Writing and designing the rulebook.</li><li>Preparing the final Print and Play package.</li></ul>
+    <p>My focus throughout the project was not only whether an individual mechanic worked, but what player behaviour it encouraged and how it affected the surrounding systems.</p>
 
-      <h1 class="display-5 mb-3">Acquit</h1>
-      <p class="lead">A Single-Player Courtroom Strategy Card Game</p>
+    <h2 class="h3 mt-5">Design Goals</h2>
+    <ul><li>Make forward planning and positional decision-making the primary source of strategy.</li><li>Give players enough information about the Assassin to predict its movement and plan around it.</li><li>Design a map where routes had different strategic values rather than one optimal path.</li><li>Connect territory control directly to resource generation.</li><li>Make formations reward preparation that began several turns before combat.</li><li>Create competing demands for limited time and resources so the player could never comfortably maximize everything.</li><li>Use the eight-day limit to force players to decide when they were prepared enough to confront the Assassin.</li><li>Create a more mechanically interconnected strategy game than our previous physical project, <em>Acquit</em>.</li></ul>
 
-      <p>Acquit is a physical role-playing strategy card game where players take on the role of a defence attorney preparing and presenting a case in court.<br> Build your case during the pre-trial phase by investigating, gathering evidence, and preparing tactics before entering the courtroom, where your choices directly influence your chances of countering each argument.<br> 
-        Plan your case carefully, manage your limited resources, and persuade the court to secure an acquittal.</p>
+    <h2 class="h3 mt-5">Designing for Positional Strategy</h2>
+    <p>The main design question behind <em>Conquest</em> was:</p>
+    <p class="text-center fs-5 my-4"><strong>How can decisions made now determine what options the player has several turns later?</strong></p>
+    <p>This influenced nearly every system.</p>
+    <p>The player could see where the Assassin was and understand how it was likely to move. This meant the challenge was not simply reacting when the enemy appeared.</p>
+    <p>Instead, players needed to think ahead: Where will the Assassin be in several phases? Which route gives me enough time to prepare? Should I take a longer path for a valuable Point of Interest? Which territories are worth conquering if the Assassin may pass through them later? Where should my allies move now so they can participate in combat later? Should I spend resources healing or invest them into a stronger future formation? When should I stop expanding and prepare for the final fight?</p>
+    <p>The intended experience was built around prediction followed by commitment. Players could make informed plans, but every route or investment came with an opportunity cost.</p>
 
-      <h3 class="mt-4">Design Rationale</h3>
-      <p>Acquit was designed around translating the process of preparing and arguing a legal case into a strategic card game. To represent this, we divided the game into two distinct phases: Pre-Trial and Trial.</p>
-      <p>During Pre-Trial, players use Investigation cards to build their collection of Evidence and Tactics. This creates a preparation and deck-building stage where the player must consider what resources may be useful later. During the Trial, these resources are then used alongside a chosen Motion to counter Arguments, modifying dice rolls and giving the player additional ways to respond to each situation.</p>
-      <p>The combination of hand-building, dice rolls, evidence matching, argument difficulty and set bonuses was designed to create a balance between preparation, decision-making and uncertainty. Rather than relying entirely on luck, players can improve their odds through the decisions they make before and during the trial.</p> <br>
+    <h2 class="h3 mt-5">Map Design &amp; Route Planning</h2>
+    <p>I designed the complete 29-territory map, including its four regions, node connections, road network, choke points, Strongholds, region transitions, and Points of Interest.</p>
+    <p>The map was designed mechanically before it was treated as an illustration.</p>
+    <p>Every connection affected movement efficiency, Assassin routing, access to resources, territory income, ally positioning, formation setup, access to special locations, and recovery from poor routing decisions.</p>
+    <p>I wanted different routes to create different trade-offs. A direct route might save Action Points but provide fewer opportunities to gather resources. A longer route could offer access to healing or other Points of Interest, but delay the player enough for the Assassin to close the distance.</p>
+    <p>This meant a route was never valuable purely because it was short. Its value depended on the player's current situation.</p>
+    <p class="text-center fs-5 my-4"><strong>Route Value = Movement Cost + Resources + Assassin Position + Ally Position + Remaining Time</strong></p>
+    <p>I also deliberately designed the board so its underlying structure could survive balancing changes. The regions contained comparable choke points, alternate routes, and strategic intersections. If a Point of Interest proved too powerful in one location during testing, we could move that effect to another compatible node rather than redesigning the entire map.</p>
+    <p>This allowed the board itself to remain stable while the systems placed on top of it continued to evolve.</p>
 
-      <p>For this project, I took primary responsibility for developing the game's core systems and mechanics as part of a 6-person team. I designed the interactions between the different card types, structured the scoring systems, and worked extensively on balancing and playtesting the game. I also contributed to refining the overall player flow and authored the rules required to turn the concept into a complete and playable physical card game.</p><br>
-      <p>No AI-generated artwork was used in this project. I was responsible for the overall visual design and produced the majority of the game's assets, with additional assets created by my teammates.</p>
+    <h2 class="h3 mt-5">Action Points &amp; Movement Economy</h2>
+    <p>Movement uses an Action Point system, designed collaboratively between the other design lead and me after being inspired by the action economy in <em>Divinity: Original Sin 2</em>.</p>
+    <p>I established and balanced the travel costs between routes. Different connections required different amounts of AP, which allowed geography to become part of the strategy.</p>
+    <p>A destination could appear close on the board while still representing a significant commitment if the route required more Action Points. This made movement a resource rather than a free transition between locations.</p>
+    <p>Players needed to decide whether spending extra AP was justified by a stronger Point of Interest, better future positioning, additional territory, reaching an ally, escaping the Assassin's expected route, or creating a better combat setup.</p>
+    <p>The player was constantly trading time for position.</p>
 
-      <h4 class="mt-5">Key Features</h4>
-      <ul>x`
-        <li>Deck Building</li>
-        <li>Single Player</li>
-        <li>Original Design</li>
-      </ul>
+    <h2 class="h3 mt-5">Designing the Assassin</h2>
+    <p>The Assassin was intentionally designed as a predictable threat rather than a random one.</p>
+    <p>The enemy moves toward the Prince based on the map's route structure, with its movement changing according to the current phase of the day. This gave the player enough information to estimate where the Assassin would be in future phases.</p>
+    <p>That predictability was essential to the game. If the enemy moved randomly, careful route planning and formation setup could be invalidated by chance. If the Assassin was completely avoidable, there would be little reason to engage with the pressure systems at all.</p>
+    <p>The challenge was therefore finding the right balance: <strong>predictable enough to plan around, fast enough to remain threatening.</strong></p>
+    <p>The Assassin effectively became a moving deadline on the board. The player might know exactly where it was heading, but still need to decide whether to continue toward a valuable location, reposition an ally, retreat toward safety, sacrifice control of a territory, allow the Assassin to approach intentionally, or begin preparing for combat.</p>
+    <p>This turned enemy movement into one of the game's main strategic systems rather than simply an AI procedure.</p>
 
-      <h4 class="mt-5">Tools & Technologies</h4>
-      <ul>
-        <li>Figma</li>
-        <li>Procreate</li>
-        <li>PowerPoint</li>
-      </ul>
+    <h2 class="h3 mt-5">Territory, Resources &amp; Route Value</h2>
+    <p>I designed the game's territorial-control system and connected it directly to the resource economy.</p>
+    <p>The Prince can conquer territories while travelling through the map. Controlled territories generate supplies, making expansion the primary way to improve the player's economy.</p>
+    <p>However, control is not permanent. The Assassin can pass through conquered territories and remove the player's control.</p>
+    <p>This meant players could not simply expand outward and assume every captured territory would remain useful. They needed to consider whether a territory was easy to maintain, likely to be crossed by the Assassin, worth the movement required to reach it, useful for future routes, and valuable enough to justify defending.</p>
+    <p>Territory ownership therefore became another form of prediction. A player could technically conquer a location, but that did not necessarily mean they should.</p>
 
-      <h3 class="mt-4">Interested in Playing?</h3>
-      <p>Click here to download the print and play version!</p>
-      <a href="Assets/Conquest_PrintNPlay.pdf" download="Conquest_Print&Play.pdf">Download the PDF</a>
+    <h2 class="h3 mt-5">Resource Balancing</h2>
+    <p>Supplies could be spent on areas such as healing and character improvements.</p>
+    <p>My balancing goal was:</p>
+    <p class="text-center fs-5 my-4"><strong>The player should become stronger over time, but never have enough time or resources to comfortably buy everything.</strong></p>
+    <p>If resources were too generous, there was little reason to make difficult territorial choices. If resources were too limited, players could not meaningfully engage with upgrades and formations.</p>
+    <p>The economy therefore needed to create competing priorities: heal now or save for an upgrade, capture another territory or prepare for combat, improve an ally or preserve resources for the Prince, and take a longer route for greater income or choose the safer path.</p>
+    <p>The fixed eight-day deadline reinforced this. Every additional turn spent building the economy was also another turn in which the Assassin continued moving.</p>
 
-      <p>Click here to download the rulebook!</p>
-      <a href="Assets/Conquest_RuleBook.pdf" download="Conquest_RuleBook.pdf">Download the PDF</a>
-      <br>
-      
-      <a href="/" class="btn btn-outline-light mt-4">← Back to Projects</a>
-    </div>
-  </section>
+    <h2 class="h3 mt-5">Points of Interest</h2>
+    <p>I proposed and designed the Point of Interest system to give individual locations value beyond normal territory control.</p>
+    <p>Points of Interest included locations such as Strongholds, Camps, Watchtowers, Fishing Ports, and other special spaces that could provide healing, resources, regional effects, or other strategic benefits.</p>
+    <p>Their purpose was to create strategic temptation. A Point of Interest could offer a powerful advantage, but reaching it might require the player to spend more Action Points, move away from an ally, enter the Assassin's route, delay another objective, or sacrifice a stronger long-term position.</p>
+    <p>This made parts of the map valuable for different reasons. The player was not simply deciding where to go. They were deciding what advantage was worth changing their route for.</p>
 
-  <!-- Footer -->
-  <footer class="text-white p-4 mt-5" style="background-color: #00000083;">
-    <div class="container d-flex justify-content-between align-items-center">
-      <a href="https://www.linkedin.com/in/mandy-koh-b865151a9" target="_blank" class="btn text-light d-flex align-items-center">
-        <img src="Assets/LI-In-Bug.png" alt="LinkedIn" style="height: 20px; width: 20px; margin-right: 8px;">
-        LinkedIn
-      </a>
-      <p class="mb-0 text-end">&copy; 2026 Mandy's Portfolio</p>
-    </div>
-  </footer>
+    <h2 class="h3 mt-5">Formations &amp; Combat</h2>
+    <p>Combat was designed collaboratively between the other design lead and me, with another teammate initially proposing the concept of formations.</p>
+    <p>The formation system became one of the clearest ways to reward long-term positional planning.</p>
+    <p>Friendly characters included the Prince, Vanguard Captain, and Shield Warden, with each contributing differently to combat. Rather than allowing every ally to contribute regardless of location, characters needed to be positioned appropriately on the map.</p>
+    <p>This meant combat began several turns before the actual encounter. If the player wanted a particular formation, they first needed to consider where the Assassin was likely to arrive, which allies were required, how many turns those allies needed to reach the location, whether the Prince could reach the same area, whether the necessary routes were affordable, and whether preparing the formation was worth delaying another objective.</p>
+    <p>Formations such as Retribution and Preservation then rewarded those earlier decisions with different combat advantages.</p>
+    <p class="text-center fs-5 my-4"><strong>Prediction &rarr; Positioning &rarr; Formation &rarr; Combat Payoff</strong></p>
 
+    <h2 class="h3 mt-5">Positional Risk</h2>
+    <p>The Assassin's own attacks also changed depending on how many player-controlled units were involved. This prevented the optimal strategy from simply being placing every ally beside the enemy.</p>
+    <p>More participating characters could increase the player's combat potential, but could also expose the group to stronger enemy responses. The player therefore needed to think about both sides of the positioning problem.</p>
+    <p>It was not enough to ask, "How do I maximize my formation?" They also needed to consider, "What does this position allow the Assassin to do?"</p>
+
+    <h2 class="h3 mt-5">Event Cards</h2>
+    <p>I designed the game's Event cards to introduce variation without overriding the player's strategic planning.</p>
+    <p>Events could affect allies, the Assassin, regions, movement, combat, resources, and conquering. The purpose was not to randomly invalidate the player's strategy. Instead, Events temporarily changed the conditions under which that strategy had to operate.</p>
+    <p>For example, a route that was normally efficient might become less attractive for a turn, requiring the player to reconsider their immediate plan while still working toward the same longer-term goal.</p>
+    <p>This helped prevent repeated playthroughs from following identical routes without turning <em>Conquest</em> into a primarily luck-driven game.</p>
+
+    <h2 class="h3 mt-5">Playtesting &amp; Balancing</h2>
+    <p>We conducted more than <strong>20 playtests</strong> using friends, family, team members, and players with different levels of gaming experience.</p>
+    <p>The three systems that required the most balancing were Assassin movement, resource generation, and Prince survivability. These systems collectively determined how much pressure the player experienced.</p>
+    <p><strong>Assassin Movement:</strong> If the Assassin moved too quickly, players could not establish territory or prepare formations before being forced into combat. If it moved too slowly, the player could build an overwhelming advantage before the enemy became threatening.</p>
+    <p><strong>Resources:</strong> Too many supplies made upgrades automatic and weakened territorial decision-making. Too few supplies made some of the more interesting character and formation strategies inaccessible.</p>
+    <p><strong>Prince Survivability:</strong> If the Prince was too fragile, one poor movement decision could decide the entire game. If the Prince was too durable, encounters stopped carrying meaningful risk.</p>
+    <p>The important lesson was that these values could not be balanced independently. Changing Assassin speed also changed how many turns the player had to generate resources. Changing resources affected how quickly characters could become stronger. Changing survivability altered how aggressively players were willing to route near the Assassin.</p>
+    <p>This became one of the strongest systems-design exercises in the project.</p>
+
+    <h2 class="h3 mt-5">Art Direction &amp; Physical Production</h2>
+    <p>I served as Art Lead and created approximately 50% of the final visual assets.</p>
+    <p>The visual direction was inspired by medieval aesthetics and animated fantasy, particularly <em>Disenchantment</em>.</p>
+    <p>The final game used parchment textures, heraldic imagery, medieval cartography, decorative borders, shields and swords, compass motifs, regional colour identities, and illustrated terrain.</p>
+    <p>No AI-generated artwork was used. All final assets were created by the team, although some character designs used strong visual references during development.</p>
+
+    <h2 class="h3 mt-5">Board Illustration</h2>
+    <p>I illustrated the entire game board from scratch.</p>
+    <p>Because I was also responsible for its mechanical design, I could make the visual hierarchy support gameplay directly.</p>
+    <p>I created terrain, regional identities, forests, mountains, rivers, settlements, Strongholds, roads, territory numbering, Point of Interest markers, regional boundaries, compass elements, and the map legend.</p>
+    <p>The challenge was making the board function as both an illustration and an interface. Routes needed to remain immediately readable. Regions needed to be identifiable so regional Event effects were easy to resolve. Territory numbers and Points of Interest needed to stand out without overwhelming the illustrated terrain.</p>
+
+    <h2 class="h3 mt-5">Rulebook &amp; Player Onboarding</h2>
+    <p>I wrote and designed the complete 16-page rulebook.</p>
+    <p>Because <em>Conquest</em> was significantly more complex than our previous card game, communicating the design clearly became a major part of the project's UX work.</p>
+    <p>The rulebook covered components, board structure, setup, characters, turn flow, movement, conquering, combat, Assassin behaviour, upgrades, formations, Points of Interest, Events, and basic strategy.</p>
+    <p>I also created diagrams and visual examples where the systems were easier to understand spatially than through text alone.</p>
+    <p>We tested the final documentation with players of different ages and gaming familiarity. Players with and without gaming experience were able to learn, set up, and play the game without requiring continuous explanation from our team.</p>
+    <p>For a systems-heavy physical game, I considered that an important validation of both the rules and the interface design.</p>
+
+    <h2 class="h3 mt-5">Print &amp; Play</h2>
+    <p>I assembled the final Print and Play package, including the board and supporting physical components.</p>
+    <p>The package contained elements such as board sections, Event cards, formation references, character standees, character sheets, counters, tokens, and supporting gameplay components.</p>
+    <p>Preparing the Print and Play version required considering physical usability alongside the game rules, including component size, readability, assembly, table space, and how frequently information needed to be referenced during play.</p>
+
+    <h2 class="h3 mt-5">Project Outcome</h2>
+    <p><em>Conquest</em> received an A grade and was among the strongest projects in the class.</p>
+    <p>A complete game generally lasted between 30 minutes and one hour, depending on how quickly the player evaluated their movement and resource decisions.</p>
+    <p>For me, the most important outcome was learning how to create strategy through the relationship between systems rather than through the complexity of any single mechanic.</p>
+    <p>The central design relationship became:</p>
+    <p class="text-center fs-5 my-4"><strong>Map Layout &rarr; Movement Cost &rarr; Position &rarr; Territory &rarr; Resources &rarr; Upgrades &rarr; Formations &rarr; Assassin Movement &rarr; Combat</strong></p>
+    <p>The map determined which choices were available. Movement costs determined which choices were affordable. Territory determined economic strength. Resources determined which future advantages could be purchased. Formations rewarded earlier positioning. The Assassin applied pressure to every stage of that process.</p>
+    <p>Together, these systems produced the intended experience: observe the board, predict what will happen next, and deliberately create the conditions for a successful confrontation.</p>
+
+    <div class="mt-5"><h2 class="h3">Play Conquest</h2><p>Download the complete Print and Play set or the rulebook.</p><a class="btn btn-outline-light me-2 mb-2" href="Assets/Conquest_PrintNPlay.pdf" download="Conquest_Print_and_Play.pdf">Download Print and Play</a><a class="btn btn-outline-light mb-2" href="Assets/Conquest_RuleBook.pdf" download="Conquest_RuleBook.pdf">Download Rulebook</a></div>
+    <h2 class="h3 mt-5">Key Contributions</h2>
+    <ul><li>Served as Game Designer / Art Lead on a six-person physical strategy project.</li><li>Originated the core game concept.</li><li>Designed the game around forward planning, route efficiency, and predictive positioning.</li><li>Designed the complete 29-territory, four-region game board.</li><li>Created every node, route, choke point, region transition, Stronghold location, and strategic connection.</li><li>Designed the map so Points of Interest and balance values could be changed without rebuilding the underlying board.</li><li>Proposed the node-based movement system and collaborated on the Action Point economy.</li><li>Determined and balanced AP travel costs.</li><li>Designed the territorial-control system and connected it directly to resource generation.</li><li>Designed the Assassin's ability to remove player control from territories, making expansion dependent on enemy prediction.</li><li>Proposed and designed the Point of Interest system.</li><li>Designed the Event cards to add variation without overpowering strategic planning.</li><li>Collaborated on combat, characters, and the eight-day gameplay structure.</li><li>Helped develop formations that rewarded decisions made several turns before combat.</li><li>Balanced resources so healing, upgrades, territorial expansion, and combat preparation competed for limited time and supplies.</li><li>Balanced Assassin movement to remain predictable enough to plan around while still maintaining pressure.</li><li>Conducted and evaluated more than 20 playtests.</li><li>Produced approximately 50% of the final artwork.</li><li>Illustrated the entire game board from scratch.</li><li>Led the game's visual direction across a team with different art styles and production standards.</li><li>Wrote and designed the complete 16-page rulebook.</li><li>Assembled the final Print and Play package.</li><li>Helped deliver an A-grade project recognized as one of the stronger projects in the class.</li></ul>
+    <a href="/" class="btn btn-outline-light mt-4">&larr; Back to Projects</a>
+  </div></section>
+
+  <footer class="text-white p-4 mt-5" style="background-color:#00000083;"><div class="container d-flex justify-content-between align-items-center"><a href="https://www.linkedin.com/in/mandyykoh/" target="_blank" class="btn text-light d-flex align-items-center"><img src="Assets/LI-In-Bug.png" alt="LinkedIn" style="height:20px;width:20px;margin-right:8px;">LinkedIn</a><p class="mb-0 text-end">&copy; 2026 Mandy's Portfolio</p></div></footer>
   <script src="script.js"></script>
 </body>
 </html>
