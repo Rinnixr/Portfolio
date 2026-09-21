@@ -2,112 +2,237 @@
 <html lang="en">
 <head>
   <base href="/">
-  <title>Shinwa - Project Spotlight</title>
+  <title>One Million - Project Spotlight</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Electrolize&family=Norican&family=Nunito&family=Sriracha&display=swap" rel="stylesheet">
-  
-  <!-- Favicon -->
-   <link rel="shortcut icon" type="image/png" href="Assets/heart.png">
+  <link rel="shortcut icon" type="image/png" href="Assets/heart.png">
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    .banner-media {
-      max-height: 500px;
-      object-fit: cover;
-      width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-    }
+    html { scroll-behavior: smooth; }
+    .project-meta dt { color: #fff; font-weight: 700; margin-bottom: .2rem; }
+    .project-meta dd { color: rgba(255,255,255,.72); margin-bottom: 1.25rem; }
+    .project-meta { margin-left: 0; margin-right: 0; }
+    .project-meta > [class*="col"]:first-child { padding-left: 0; }
+    .project-image { display:block; width:100%; height:auto; max-height:650px; margin:1.5rem 0; border-radius:12px; object-fit:contain; object-position:center; }
+    .project-image-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; margin:1.5rem 0; }
+    .project-image-grid .project-image { margin:0; max-height:520px; }
+    @media (max-width: 767px) { .project-image-grid { grid-template-columns:1fr; } }
   </style>
 </head>
 <body class="bg-dark text-light">
-
   <div id="twinkle-container"></div>
+  <nav id="navbar" class="navbar text-white navbar-expand-lg fixed-top"><div class="container-fluid">
+    <a class="navbar-brand" href="#">The Curio Closet</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link" href="/#projects">Projects</a></li><li class="nav-item"><a class="nav-link" href="/#about">About Me</a></li><li class="nav-item"><a class="nav-link" href="/#contact">Contact Me</a></li>
+    </ul></div>
+  </div></nav>
 
-  <!-- Navbar -->
-  <nav id="navbar" class="navbar text-white navbar-expand-lg fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">The Curio Closet</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="/#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="/#about">About Me</a></li>
-          <li class="nav-item"><a class="nav-link" href="/#contact">Contact Me</a></li>
-        </ul>
-      </div>
+  <section id="summary" class="pt-5 mt-5"><div class="container">
+    <img src="Assets/OneMillion.png" class="project-image" alt="One Million fantasy level design overview">
+    <h1 class="display-5 mb-3">One Million</h1>
+    <p class="lead mb-5">A large-scale fantasy level design study focused on open-world structure, environmental storytelling, social zoning, quest progression, pacing, exploration, and the design of a complete 90-minute experience.</p>
+
+    <div class="row g-4 mb-5 project-meta" aria-label="Project details">
+      <div class="col-md-4"><dl><dt>Format</dt><dd>Open-World Level Design / Experience Design Study</dd><dt>Tool</dt><dd>RPG Map Editor 2, Deepnight Games</dd><dt>Duration</dt><dd>24 May &ndash; 16 June</dd></dl></div>
+      <div class="col-md-4"><dl><dt>School</dt><dd>DigiPen Institute of Technology Singapore</dd><dt>Course</dt><dd>Level Design<br>Year 2, Trimester 3</dd><dt>Project Type</dt><dd>Individual Assignment</dd></dl></div>
+      <div class="col-md-4"><dl><dt>Role</dt><dd>Level Designer</dd></dl></div>
     </div>
-  </nav>
+    <p class="mb-5">World design, macro layout, programme planning, quest design, environmental storytelling, worldbuilding, player routing, progression design, resource distribution, pacing, intensity planning, spatial hierarchy, social zoning, exploration design, and supporting environment art.</p>
 
-  <!-- Project Content -->
-  <section id="summary" class="pt-5 mt-5">
-    <div class="container">
-        <div class="mb-4">
-            <iframe
-                class="w-100 rounded shadow"
-                src="https://drive.google.com/file/d/1Xv2QizpxNIjDuWz8E1hz66acKoKP7vpH/preview"
-                allow="autoplay"
-                allowfullscreen
-                style="aspect-ratio: 16 / 9; border: none;">
-            </iframe>
-        </div>
+    <h2 class="h3 mt-5">Overview</h2>
+    <p><em>One Million</em> was the final and largest assignment for my Level Design module at DigiPen Singapore.</p>
+    <p>The brief required me to design a detailed 150m x 150m game space, create a programme defining the relationships between its major locations, and plan a complete quest experience containing objectives, key interaction events, an intensity curve, and exactly 1,000,000 units of a chosen resource distributed across the playthrough.</p>
+    <p>I used that framework to create a medieval fantasy kingdom centred around a political conspiracy.</p>
+    <p>The player takes the role of the sworn knight of Princess Elvira. Following the unexplained death of her father, King Ignatius, the player discovers evidence suggesting an assassination plot against the princess and has fourteen days to uncover the conspiracy before her coronation.</p>
+    <p>The resulting experience was designed as an approximately 90-minute golden route through a larger free-roam world.</p>
+    <p>Rather than treating the assignment as a sequence of connected rooms, I wanted to create a believable fantasy capital where geography, wealth, architecture, sanitation, occupation, politics, and player progression reinforced one another.</p>
+    <p>The strongest part of the project for me was the environmental storytelling. I wanted the kingdom to feel like somewhere people actually lived rather than a map constructed purely to hold quest objectives.</p>
+    <p>The assignment received a <strong>100 grade</strong>, the highest result in the class. It was showcased during class as an example of strong level-design execution. I also completed the overall Level Design course with a score of <strong>100</strong>.</p>
 
-      <h1 class="display-5 mb-3">Shinwa</h1>
-      <p class="lead"> An immersive Japanese themed VR horror game created by The Nana Studios, a group consisting of Jolie Ng, Evan Talavera, Muhammad Nur Syakir, and myself.</p>
+    <h2 class="h3 mt-5">My Role</h2>
+    <p>I created the project independently from concept to final submission.</p>
+    <p>I was responsible for the complete story and worldbuilding, the player character and Princess Elvira, the kingdom's political structure, social-class hierarchy, complete 150m x 150m map, programme and location adjacency, district identities, quest structure, all 29 interaction beats, resource progression, intensity planning, player routing, shortcuts and secondary paths, environmental storytelling, multi-level areas, supporting asset edits and original environment assets, and the final Experience Draft.</p>
+    <p>None of the setting, narrative, locations, quest structure, or progression was supplied by the brief.</p>
+    <p>My main goal was to create a world where the player's investigation, the geography of the kingdom, and the social structure of its inhabitants all told the same story.</p>
 
-        <p>Shinwa is a VR horror game that immerses users in Japanese Folklore through various levels, each representing a respective tale.<br>
-        The game was designed to provide an atmospheric, creepy and thrilling experience for players.<br>
-        The game was created using the Unity Game Engine and requires a VR headset to play.</p>
+    <h2 class="h3 mt-5">Design Goals</h2>
+    <ul><li>Create a believable fantasy capital rather than a linear sequence of quest spaces.</li><li>Use social class and environment quality to communicate worldbuilding without exposition.</li><li>Design a central hub that supported free exploration and branching destinations.</li><li>Give the player strong landmarks and district identities so a large map remained readable.</li><li>Use environmental conditions to reinforce character motivations and political tensions.</li><li>Create gameplay variety through investigation, dialogue, stealth, exploration, puzzles, and combat.</li><li>Structure the golden route around a deliberate intensity curve to avoid combat fatigue.</li><li>Reward increasingly important discoveries with increasingly large progression milestones.</li><li>Allow exploration to reveal shortcuts and alternative routes.</li><li>Make the player's assumptions about the conspiracy change as they discover new evidence.</li></ul>
 
-      <h3 class="mt-4">Design Rationale</h3>
-      <p>Our team decided on creating a Japanese themed VR horror game for a multitude of reasons. Firstly, as fellow members of the gaming community, we found the horror game industry is becoming stale, and felt that most of the gameplay/concepts were overused. Moreover, not many horror games are well optimized for VR due to the hardware limitations. After doing some research, we found that there were little to no horror games that allowed players to be in the center of a horror story and therefore came up with a suitable project plan.</p>
-      <p>We have managed to identify a market for Japanese folklore-based VR horror games. Japanese-themed horror games are currently in high demand as they provide a unique perspective into what the Japanese consider to be "horror". Along with this, VR games are also popular amongst horror fans as VR manages to immerse the player fully into the environment around them, creating many opportunities for scares and frights.</p>
-      <p>For this project, I contributed in the story creation, level design, prop placement, 3D character modeling, animation, UI design, dialogue writing, VFX, lighting and post-processing.</p>
+    <h2 class="h3 mt-5">Designing a Complete Experience</h2>
+    <img src="Assets/TheConspiracy_KeyEvents.png" class="project-image" alt="The Conspiracy key interaction events chart">
+    <p>The assignment did not require a specific playtime, but I designed the main quest around approximately 90 minutes.</p>
+    <p>The Experience Draft contains 29 individual interaction events, ranging from short conversations and evidence collection to stealth sequences, environmental puzzles, boss fights, and a multi-stage finale.</p>
+    <p>The experience was divided into nine major quest sections: investigate the Squire's assassination, conduct an official investigation, follow the evidence through Merchant's Row, enter The Dregs undercover, infiltrate the Black Hounds, seek help from the Witch, discover the hidden conspiracy, form an unlikely alliance, and protect the Coronation.</p>
+    <p>The complete objective structure gradually takes the player from a local murder investigation to discovering a conspiracy involving nobility, the Temple, corruption, forbidden magic, and the death of the King.</p>
+    <p>The golden route provides a clear intended progression, but I did not design the world to feel linear.</p>
+    <p>My inspiration came heavily from games such as <em>RuneScape</em>, <em>Baldur's Gate 3</em>, <em>Divinity: Original Sin 2</em>, and <em>Genshin Impact</em>, where players can understand their main objective while still feeling that the surrounding world exists independently of it.</p>
 
-      <h4 class="mt-5">Key Features</h4>
-      <ul>
-        <li>3D Surround Audio</li>
-        <li>Story Based, Free Exploration</li>
-        <li>Designed with Color-Deficiency & Lower-Limb in Mind</li>
-        <li>Original Assets</li>
-      </ul>
+    <h2 class="h3 mt-5">Programme &amp; Macro Layout</h2>
+    <img src="Assets/TheConspiracy_Programme.png" class="project-image" alt="The Conspiracy programme diagram">
+    <p>Before constructing the map, I created a programme diagram establishing the relationships between the major locations.</p>
+    <p>The programme connected areas including Castle, High District, Merchant's Row, The Dregs, Temple, Nunnery, Farms, Mines, Woods, and Ruins.</p>
+    <p>This was important because the scale of the assignment made it easy to create an attractive map that did not actually function as a coherent world.</p>
+    <p>I used the programme to answer questions such as which districts should border each other, where trade would naturally occur, how food and raw materials would enter the capital, where religious institutions would sit relative to political power, where poorer residents would be pushed geographically, which areas players should naturally move through while investigating, and where exploration could create useful shortcuts.</p>
+    <p>I then translated these relationships into the final geography.</p>
 
-      <h4 class="mt-5">Tools & Technologies</h4>
-      <ul>
-        <li>Unity Engine (3D)</li>
-        <li>C# Scripting</li>
-        <li>Photoshop, Procreate & Clip Studio Paint</li>
-        <li>Autodesk Maya (3D Modeling)</li>
-        <li>Mixamo (3D Animations)</li>
-      </ul>
-
-      <a href="/" class="btn btn-outline-light mt-4">← Back to Projects</a>
+    <h2 class="h3 mt-5">Central Hub &amp; World Structure</h2>
+    <div class="project-image-grid">
+      <img src="Assets/OneMillion_Level0.png" class="project-image" alt="One Million main level map">
+      <img src="Assets/OneMillion_OtherLvls.png" class="project-image" alt="One Million alternate and supporting level maps">
     </div>
-  </section>
+    <p>The kingdom was designed around a central hub with branching destinations.</p>
+    <p>The Castle occupies the political and geographic centre of the capital.</p>
+    <p>I deliberately surrounded it with water to communicate protection and separation. The royal family occupies the most defensible area in the kingdom, while the water creates a visible divide between royalty and the people they govern.</p>
+    <p>This made the Castle both a gameplay landmark and a symbolic representation of social power.</p>
+    <p>From there, the player can move outward into different districts and surrounding environments.</p>
+    <p>The main quest presents one recommended route through these areas, but the intended world structure was closer to an open fantasy RPG than a linear corridor.</p>
+    <p>Exploration could reveal alternative connections, such as routes through caves and the ruins.</p>
 
-  <!-- Footer -->
-  <footer class="text-white p-4 mt-5" style="background-color: #00000083;">
-    <div class="container d-flex justify-content-between align-items-center">
-      <a href="https://www.linkedin.com/in/mandyykoh/" target="_blank" class="btn text-light d-flex align-items-center">
-        <img src="Assets/LI-In-Bug.png" alt="LinkedIn" style="height: 20px; width: 20px; margin-right: 8px;">
-        LinkedIn
-      </a>
-      <p class="mb-0 text-end">&copy; 2026 Mandy's Portfolio</p>
-    </div>
-  </footer>
+    <h2 class="h3 mt-5">Designing Social Hierarchy Through Space</h2>
+    <p>One of my strongest design goals was making the kingdom's social hierarchy visible through the environment.</p>
+    <p>The prologue establishes four major social layers:</p>
+    <p class="text-center fs-5 my-4"><strong>Castle &rarr; High District &rarr; Merchant's Row &rarr; The Dregs</strong></p>
+    <p>The High District houses nobles, scholars, and wealthy families. Merchant's Row is denser and more commercially focused. The Dregs represents extreme poverty, crime, and limited infrastructure.</p>
+    <p>I translated this directly into the level design. As the player travels away from the Castle and toward poorer districts, streets become denser, buildings become smaller, paths become less organised, sanitation deteriorates, public infrastructure becomes less reliable, living spaces become more crowded, and environmental cleanliness decreases.</p>
+    <p>The Experience Draft even considers sanitation as an indicator of class. Residents of Merchant's Row and The Dregs depend more heavily on communal facilities, while wealthier homes closer to the High District can afford private plumbing.</p>
+    <p>These details were not necessary for completing the quest. They existed because I wanted the environment to explain why people in different parts of the kingdom behaved differently.</p>
+    <p>Poverty, distrust of authority, desperation, and resentment become easier for the player to understand when those conditions are visible around them.</p>
 
+    <h2 class="h3 mt-5">Environmental Storytelling</h2>
+    <p>I wanted the world to communicate its history and economy even when the player was not actively completing an objective.</p>
+    <p>The map therefore includes locations such as farms, mines, merchant districts, religious institutions, guilds, noble residences, slums, woods, ruins, caves, camps, and workshops.</p>
+    <p>These locations help answer a simple question: how does this kingdom actually function?</p>
+    <p>Where does its food come from? Where are raw materials sourced? Where do merchants work? Where do the wealthy live? Where are poor residents pushed? Where does religion exercise influence? Where would criminals or mercenaries operate?</p>
+    <p>Thinking through these questions made the map feel less like a quest board and more like a place with an internal logic.</p>
+
+    <h2 class="h3 mt-5">Designing the Investigation Through Geography</h2>
+    <p>The player's physical journey also mirrors the investigation.</p>
+    <p>The game begins inside the centre of institutional power.</p>
+    <p>The player's initial response is formal: examine the Squire, question guards, question servants, and question nobles.</p>
+    <p>But official channels produce contradictions rather than answers. The player is gradually forced outward.</p>
+    <p>They move into Merchant's Row, question guilds, listen to rumours, then enter The Dregs undercover.</p>
+    <p>From there, the investigation becomes progressively less official:</p>
+    <p class="text-center fs-5 my-4"><strong>Castle &rarr; Guilds &rarr; Tavern Gossip &rarr; Criminal District &rarr; Mercenary Headquarters &rarr; Witch &rarr; Ancient Ruins</strong></p>
+    <p>The geography therefore reinforces the narrative.</p>
+    <p>The player begins by trusting the institutions closest to the Crown and gradually discovers that the information they need exists outside those institutions.</p>
+
+    <h2 class="h3 mt-5">Designing Around Player Bias</h2>
+    <p>I deliberately structured the investigation around psychological biases I had encountered in Psychology 101.</p>
+    <p>The player is given several plausible early assumptions: mercenaries are dangerous, The Dregs is associated with crime, witches are feared, the Temple publicly condemns magic, and nobles appear respectable.</p>
+    <p>This encourages assumptions based on confirmation bias, anchoring bias, availability heuristic, explicit bias, and halo effect.</p>
+    <p>The Black Hounds appear suspicious because evidence repeatedly points toward them. The Witch appears suspicious because the murder weapon contains magical markings. The Temple appears trustworthy because of its institutional authority and public opposition to magic.</p>
+    <p>The investigation then gradually dismantles those assumptions.</p>
+    <p>The player eventually discovers that the Black Hounds were being framed and that the supposed magical evidence leads instead toward sanctioned religious and political actors. The ruins reveal payment records, correspondence, and evidence of the deeper conspiracy.</p>
+    <p>I wanted the mystery to work not simply because information was hidden, but because the player was encouraged to interpret correct information incorrectly before gaining enough context.</p>
+
+    <h2 class="h3 mt-5">Gameplay Variety</h2>
+    <p>Gameplay variety was intentional.</p>
+    <p>Because the experience was designed to last more than an hour, relying on one interaction type would quickly become repetitive.</p>
+    <p>The golden route alternates between investigation, dialogue, evidence collection, exploration, stealth, eavesdropping, bribery, environmental puzzles, combat, boss encounters, and narrative reveals.</p>
+    <p>For example, the player might spend one section questioning witnesses, another infiltrating a criminal district, another traversing the woods, and another solving an ancient mechanism.</p>
+    <p>This variety also supported different player fantasies within the same character.</p>
+    <p>The protagonist is not only a fighter. They are also an investigator, knight, protector, infiltrator, negotiator, and explorer.</p>
+
+    <h2 class="h3 mt-5">Intensity &amp; Pacing</h2>
+    <img src="Assets/TheConspiracy_Intensity.png" class="project-image" alt="The Conspiracy intensity curve">
+    <p>I created an intensity curve for all 29 interaction events.</p>
+    <p>The experience deliberately begins with a high-intensity moment when the Squire is assassinated in front of the player.</p>
+    <p>Intensity then falls during the initial investigation before gradually rising again through infiltration, combat, exploration, discovery, and the final confrontation.</p>
+    <p>My goal was to avoid two extremes. Too much combat creates fatigue. Too little action makes the investigation feel passive.</p>
+    <p>I alternated quieter information-gathering sections with higher-intensity encounters so that each could make the other more effective.</p>
+    <p>A quiet sequence after combat gives the player time to process information. A dangerous encounter after several investigative scenes restores urgency.</p>
+    <p>The intensity curve therefore helped determine not only what happened, but when it happened.</p>
+
+    <h2 class="h3 mt-5">Multi-Stage Final Encounter</h2>
+    <p>The Coronation serves as the payoff for the entire experience.</p>
+    <p>Rather than ending with a single boss encounter, I designed the climax in three stages.</p>
+    <p><strong>Phase 1:</strong> Protect civilians and Princess Elvira from beasts, corrupt knights, and clerics.</p>
+    <p><strong>Phase 2:</strong> Fight Lord Varrick directly.</p>
+    <p><strong>Phase 3:</strong> Varrick sacrifices the Archbishop, transforms into a demonic vessel, and becomes the final boss.</p>
+    <p>I was influenced by multi-stage encounters in RPGs such as <em>Baldur's Gate 3</em>, <em>Divinity: Original Sin 2</em>, <em>RuneScape</em>, and <em>Genshin Impact</em>.</p>
+    <p>I wanted the climax to feel proportionate to the investigation leading into it. A single short encounter risked making the conspiracy feel larger than its payoff.</p>
+    <p>The multi-stage structure allowed the final sequence to escalate from:</p>
+    <p class="text-center fs-5 my-4"><strong>Protect &rarr; Confront &rarr; Reveal &rarr; Defeat</strong></p>
+    <p>It also gave the political and supernatural sides of the conspiracy separate moments to resolve.</p>
+
+    <h2 class="h3 mt-5">Threads Resource Progression</h2>
+    <img src="Assets/TheConspiracy_Resource.png" class="project-image" alt="The Conspiracy Threads resource distribution chart">
+    <p>The assignment required the player to collect exactly 1,000,000 units of a resource.</p>
+    <p>I created <strong>Threads</strong>.</p>
+    <p>Threads represent the player's accumulation of evidence, leads, connections, and understanding of the conspiracy.</p>
+    <p>They are not currency and cannot be spent. Instead, they function as an abstract representation of how much of the mystery the player has uncovered.</p>
+    <p>I designed the reward curve myself. Early discoveries provide relatively small rewards. As the player uncovers more significant evidence and completes more difficult objectives, the values increase substantially.</p>
+    <p>The progression reaches exactly <strong>1,000,000 Threads</strong> after the final confrontation.</p>
+    <p>The increasing reward curve served several purposes: reinforcing progression, associating larger rewards with more important discoveries, reflecting rising quest difficulty, making late-game milestones feel more significant, and giving the player a sense that scattered clues are converging into a complete understanding.</p>
+    <p>The lecturer's feedback noted that the resource distribution could have used additional depth, which was the main area identified for further development.</p>
+
+    <h2 class="h3 mt-5">Player Guidance &amp; Landmarks</h2>
+    <p>The scale of the map created a navigation challenge.</p>
+    <p>I wanted the world to feel open without becoming visually confusing.</p>
+    <p>I used major landmarks and Points of Interest to help players form a mental map.</p>
+    <p>These included the Castle, Temple, district boundaries, bridges, rivers, fountain, strong architectural silhouettes, woods, farms, mines, ruins, and major roads.</p>
+    <p>The Castle is particularly useful because of its central position and distinctive form.</p>
+    <p>Waterways and district borders also help break the environment into readable sections.</p>
+    <p>The goal was for players to understand the kingdom through recognisable spatial relationships rather than relying solely on markers.</p>
+
+    <h2 class="h3 mt-5">Designing the Golden Route Within a Free-Roam World</h2>
+    <p>Although the Experience Draft specifies a recommended progression, I treated it as a golden route rather than the only route.</p>
+    <p>My main inspiration here was <em>RuneScape</em>, the first game I played extensively as a child.</p>
+    <p>I wanted the kingdom to feel like players could decide where to travel rather than being moved from one quest room directly into another.</p>
+    <p>The main quest gives purpose to movement, but the environment extends beyond the immediate objective.</p>
+    <p>Exploration can also reveal shortcuts and alternative connections.</p>
+    <p>For example, caves and ruins create routes that would become available as players investigate the world more deeply.</p>
+    <p>This helped the level feel like somewhere that could support more than one quest.</p>
+
+    <h2 class="h3 mt-5">Iterating the Capital</h2>
+    <p>The most difficult part of the project was fitting a believable fantasy kingdom into the assignment's limited space.</p>
+    <p>I repeatedly resized and reorganised the capital because my earlier layouts did not allocate enough room for the city to feel convincing.</p>
+    <p>The challenge was not simply fitting buildings inside the boundary.</p>
+    <p>I needed enough space for district identities, roads, landmarks, natural terrain, social transitions, quest locations, environmental storytelling, farms and industry, and exploration spaces while keeping travel distances consistent with the intended experience timing.</p>
+    <p>This required repeatedly evaluating the map at both macro and player scale.</p>
+    <p>I used the same role-based walkthrough technique from my earlier assignments.</p>
+    <p>I mentally moved through the environment as the player, noble, merchant, labourer, resident of The Dregs, guard, mercenary, and farmer.</p>
+    <p>This helped reveal when spaces made sense visually but did not make sense for the people supposedly using them.</p>
+
+    <h2 class="h3 mt-5">RPG Map Editor Production</h2>
+    <p>The complete environment was built in RPG Map Editor 2 by Deepnight Games.</p>
+    <p>Like the earlier assignments, this was a non-playable level-layout study.</p>
+    <p>The emphasis was therefore on spatial design, programme, player routing, environment composition, level readability, and quest planning rather than programming.</p>
+    <p>I used a combination of default tiles, purchased asset packs, free asset packs, original artwork, and edited environment assets.</p>
+    <p>I modified floors, terrain, environmental details, and other elements where necessary to make locations feel dirtier, older, more damaged, or more lived-in.</p>
+    <p>I completed the primary map in approximately one week, including the creation of additional assets required to populate it.</p>
+
+    <div class="mt-5"><h2 class="h3">Project Documents</h2><p>Open the final Experience Draft or Prologue document.</p><a class="btn btn-outline-light me-2 mb-2" href="Assets/OneMillionExperienceDraft_KohMandy.pdf" target="_blank">Open Experience Draft</a><a class="btn btn-outline-light mb-2" href="Assets/OneMillionPrologue_KohMandy.pdf" target="_blank">Open Prologue</a></div>
+
+    <h2 class="h3 mt-5">Project Outcome</h2>
+    <p>The assignment received a <strong>100 grade</strong>, the highest result in the class.</p>
+    <p>The lecturer specifically praised the concept and theme, clear main objective, believable supporting objectives, overall map design, distribution of spaces, organic topography, navigation, key interaction events, Experience Draft, and intensity curve.</p>
+    <p>The feedback described the map as believable and easy to navigate, with the intensity curve specifically identified as excellent.</p>
+    <p>The main area noted for further improvement was the depth of the resource-distribution design.</p>
+    <p>The project was showcased during class as an example of strong level-design execution.</p>
+    <p>It was also the largest assignment in the module and contributed to my overall 100 score for the Level Design course, the highest result in the class.</p>
+
+    <h2 class="h3 mt-5">What I Learned</h2>
+    <p>My earlier assignments focused largely on individual buildings and smaller programmes.</p>
+    <p><em>One Million</em> required me to scale those same principles into an entire world.</p>
+    <p>The project strengthened my understanding of macro-level spatial hierarchy, district planning, open-world structure, landmark placement, environmental storytelling, quest routing, experience pacing, social zoning, worldbuilding through infrastructure, designing spaces around multiple user groups, and connecting narrative progression to physical travel.</p>
+    <p>Most importantly, it reinforced that believable environments come from understanding why spaces exist and who uses them.</p>
+    <p>A city becomes more convincing when wealth changes sanitation. A criminal district becomes more believable when geography reflects neglect. A Castle feels powerful when the city physically revolves around it. A farm or mine makes the kingdom feel economically functional even if the main quest barely uses it.</p>
+    <p>That relationship between worldbuilding and functional level design became the strongest part of the project for me.</p>
+
+    <h2 class="h3 mt-5">Key Contributions</h2>
+    <ul><li>Completed the largest individual assignment for the Level Design module.</li><li>Designed a complete 150m x 150m fantasy world from scratch.</li><li>Created the setting, narrative, characters, factions, politics, and social structure independently.</li><li>Designed a central hub with branching destinations rather than a strictly linear quest map.</li><li>Created a programme establishing the adjacency and relationships between all major regions.</li><li>Used architecture, sanitation, density, infrastructure, and environmental quality to communicate class disparity.</li><li>Designed the Castle's central placement and surrounding water to communicate both political control and social separation.</li><li>Created a golden route through a world intended to support free exploration.</li><li>Designed shortcuts and alternative connections through locations such as caves and ruins.</li><li>Structured approximately 90 minutes of content across nine major quest sections and 29 interaction events.</li><li>Designed gameplay variety across investigation, dialogue, stealth, exploration, puzzles, and combat.</li><li>Created an intensity curve to alternate tension, recovery, investigation, and escalation throughout the experience.</li><li>Designed a three-stage finale to provide an appropriate payoff to the larger conspiracy narrative.</li><li>Structured the investigation around psychological biases including confirmation bias, anchoring, availability heuristic, explicit bias, and halo effect.</li><li>Created the Threads progression resource and balanced milestone rewards to reach exactly 1,000,000 by the end of the experience.</li><li>Used increasingly large rewards to reinforce the growing importance and difficulty of discoveries.</li><li>Reworked the capital multiple times to achieve believable scale, navigation, and district separation.</li><li>Built the primary map in approximately one week.</li><li>Created and modified supporting environmental assets to strengthen environmental storytelling.</li><li>Used role-based walkthroughs to evaluate the world from different social and functional perspectives.</li><li>Received a 100 grade, the highest result in the class.</li><li>Had the project showcased as an example of strong level-design execution.</li><li>Completed the overall Level Design course with a score of 100.</li></ul>
+    <a href="/" class="btn btn-outline-light mt-4">&larr; Back to Projects</a>
+  </div></section>
+
+  <footer class="text-white p-4 mt-5" style="background-color:#00000083;"><div class="container d-flex justify-content-between align-items-center"><a href="https://www.linkedin.com/in/mandyykoh/" target="_blank" class="btn text-light d-flex align-items-center"><img src="Assets/LI-In-Bug.png" alt="LinkedIn" style="height:20px;width:20px;margin-right:8px;">LinkedIn</a><p class="mb-0 text-end">&copy; 2026 Mandy's Portfolio</p></div></footer>
   <script src="script.js"></script>
 </body>
 </html>
