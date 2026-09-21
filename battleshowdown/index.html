@@ -43,6 +43,22 @@
       object-fit: contain;
       object-position: center;
     }
+    .project-image-pair {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+      margin: 1.5rem 0;
+      align-items: center;
+    }
+    .project-image-pair .project-image {
+      margin: 0;
+      max-height: 420px;
+    }
+    @media (max-width: 767px) {
+      .project-image-pair {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body class="bg-dark text-light">
@@ -119,8 +135,10 @@
         </ul>
         <p>Working in a reduced startup team required constant movement between <strong>production, game design, art direction, UI/UX, balancing, implementation, and partner management</strong>.</p>
 
-        <img src="Assets/Progression.png" class="project-image" alt="Progression systems">
-        <img src="Assets/RecBuild.png" class="project-image" alt="Progression systems">
+        <div class="project-image-pair">
+          <img src="Assets/Progression.png" class="project-image" alt="Progression systems">
+          <img src="Assets/RecBuild.png" class="project-image" alt="Recommended build screen">
+        </div>
         <h2 class="h3 mt-5">Game &amp; Systems Design</h2>
         <p>I contributed to design from the beginning and assumed primary ownership of the game's systems after becoming Game Producer.</p>
         <ul>
@@ -143,8 +161,10 @@
         </ul>
         <p>This work covered both <strong>level design and environment production</strong>, from initial layout concepts through visual production and engine setup.</p>
 
-        <img src="Assets/CharaEquip.png" class="project-image" alt="Equip Page">
-        <img src="Assets/SpecialWeapons.png" class="project-image" alt="Equip Page">
+        <div class="project-image-pair">
+          <img src="Assets/CharaEquip.png" class="project-image" alt="Character equip page">
+          <img src="Assets/SpecialWeapons.png" class="project-image" alt="Special weapons screen">
+        </div>
         <h2 class="h3 mt-5">Weapons &amp; Combat Content</h2>
         <ul>
           <li>Designed the visual identity and final assets for more than <strong>40 weapons</strong>.</li>
@@ -164,8 +184,10 @@
           <li>Created and reviewed character animation assets, differentiating characters through <strong>roles, stats, cosmetics, and configurable passive attributes</strong>.</li>
         </ul>
 
-        <img src="Assets/Tutorial.png" class="project-image" alt="UIUX Design">
-        <img src="Assets/ULTRAMAN SS1.png" class="project-image" alt="UIUX Design">
+        <div class="project-image-pair">
+          <img src="Assets/Tutorial.png" class="project-image" alt="Tutorial UI design">
+          <img src="Assets/ULTRAMAN SS1.png" class="project-image" alt="Ultraman collaboration UI">
+        </div>
         <h2 class="h3 mt-5">UI / UX Design</h2>
         <p>I was responsible for the overall UI/UX design and application flow; the additional artist primarily produced UI assets from my layouts, direction, and feedback.</p>
         <ul>
@@ -211,8 +233,10 @@
           <li>Worked with an overseas gaming guild for external testing. At <strong>gamescom asia 2023</strong> in Singapore, I gathered player feedback and invited new players for user interviews on onboarding, gameplay, and usability.</li>
         </ul>
 
-        <img src="Assets/CollabCharacters.png" class="project-image" alt="Collaborative characters">
-        <img src="Assets/UltramanCollab.jpg" class="project-image" alt="Collaborative characters">
+        <div class="project-image-pair">
+          <img src="Assets/CollabCharacters.png" class="project-image" alt="Collaborative characters">
+          <img src="Assets/UltramanCollab.jpg" class="project-image" alt="Ultraman collaboration characters">
+        </div>
         <h2 class="h3 mt-5">Partnerships &amp; External Collaborations</h2>
         <p>I coordinated with overseas partners to adapt their characters and requirements into suitable game content. Collaborations included <strong>BNB, Beast Kingdom / Ultraman Blazar, BattleFly, Azuki, CFC, GodJira</strong>, and other Web3 and NFT communities.</p>
         <ul>
