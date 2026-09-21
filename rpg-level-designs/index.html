@@ -2,112 +2,216 @@
 <html lang="en">
 <head>
   <base href="/">
-  <title>Shinwa - Project Spotlight</title>
+  <title>RPG Map Editor Level Design Studies - Project Spotlight</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Electrolize&family=Norican&family=Nunito&family=Sriracha&display=swap" rel="stylesheet">
-  
-  <!-- Favicon -->
-   <link rel="shortcut icon" type="image/png" href="Assets/heart.png">
+  <link rel="shortcut icon" type="image/png" href="Assets/heart.png">
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    .banner-media {
-      max-height: 500px;
-      object-fit: cover;
-      width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-    }
+    html { scroll-behavior: smooth; }
+    .project-meta dt { color: #fff; font-weight: 700; margin-bottom: .2rem; }
+    .project-meta dd { color: rgba(255,255,255,.72); margin-bottom: 1.25rem; }
+    .project-meta { margin-left: 0; margin-right: 0; }
+    .project-meta > [class*="col"]:first-child { padding-left: 0; }
+    .project-image { display:block; width:100%; height:auto; max-height:650px; margin:1.5rem 0; border-radius:12px; object-fit:contain; object-position:center; }
   </style>
 </head>
 <body class="bg-dark text-light">
-
   <div id="twinkle-container"></div>
+  <nav id="navbar" class="navbar text-white navbar-expand-lg fixed-top"><div class="container-fluid">
+    <a class="navbar-brand" href="#">The Curio Closet</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarNav"><ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link" href="/#projects">Projects</a></li><li class="nav-item"><a class="nav-link" href="/#about">About Me</a></li><li class="nav-item"><a class="nav-link" href="/#contact">Contact Me</a></li>
+    </ul></div>
+  </div></nav>
 
-  <!-- Navbar -->
-  <nav id="navbar" class="navbar text-white navbar-expand-lg fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">The Curio Closet</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="/#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="/#about">About Me</a></li>
-          <li class="nav-item"><a class="nav-link" href="/#contact">Contact Me</a></li>
-        </ul>
-      </div>
+  <section id="summary" class="pt-5 mt-5"><div class="container">
+    <img src="Assets/Witch'sAbode.png" class="project-image" alt="The Witch's Abode level layout">
+    <h1 class="display-5 mb-3">RPG Map Editor Level Design Studies</h1>
+    <p class="lead mb-5">Three individual spatial-design studies exploring residential planning, iterative redesign, accessibility, zoning, circulation, environmental storytelling, and programme development.</p>
+
+    <div class="row g-4 mb-5 project-meta" aria-label="Project details">
+      <div class="col-md-4"><dl><dt>Format</dt><dd>Level Design Studies</dd><dt>Tool</dt><dd>RPG Map Editor 2, Deepnight Games</dd><dt>Duration</dt><dd>4 May &ndash; 24 May</dd></dl></div>
+      <div class="col-md-4"><dl><dt>School</dt><dd>DigiPen Institute of Technology Singapore</dd><dt>Course</dt><dd>Level Design<br>Year 2, Trimester 3</dd><dt>Role</dt><dd>Level Designer</dd></dl></div>
+      <div class="col-md-4"><dl><dt>Projects</dt><dd>The Witch's Abode<br>The Witch's Abode: Expanded<br>Nine Lives Rest</dd></dl></div>
     </div>
-  </nav>
+    <p class="mb-5">Spatial planning, programme development, adjacency planning, circulation design, zoning, spatial hierarchy, environmental storytelling, accessibility considerations, multi-user routing, visual composition, and environment layout.</p>
 
-  <!-- Project Content -->
-  <section id="summary" class="pt-5 mt-5">
-    <div class="container">
-        <div class="mb-4">
-            <iframe
-                class="w-100 rounded shadow"
-                src="https://drive.google.com/file/d/1Xv2QizpxNIjDuWz8E1hz66acKoKP7vpH/preview"
-                allow="autoplay"
-                allowfullscreen
-                style="aspect-ratio: 16 / 9; border: none;">
-            </iframe>
-        </div>
+    <h2 class="h3 mt-5">Overview</h2>
+    <p>These three individual assignments were created for my Level Design module at DigiPen Singapore.</p>
+    <p>Rather than focusing on combat encounters or traditional gameplay spaces, the assignments explored how environments could communicate function, hierarchy, character, and intended movement through spatial design alone.</p>
+    <p>Each project was created as a level-layout study using RPG Map Editor 2. The maps were not playable levels, so the primary challenge was making the environment understandable through its arrangement, proportions, visual hierarchy, and relationship between spaces.</p>
+    <p>Across the three assignments, I focused particularly on spatial hierarchy, functional zoning, adjacency, circulation, accessibility, environmental storytelling, designing around different user roles, and translating narrative constraints into physical space.</p>
+    <p>I approached each environment by imagining how it would actually be used. Before building, I sketched layouts and created adjacency or programme diagrams. I would then mentally "walk" through the space from different perspectives and ask what I would expect to encounter next.</p>
+    <p>For residential spaces, this meant thinking about privacy, routines, rest, work, and convenience.</p>
+    <p>For <em>Nine Lives Rest</em>, I repeated the process from several perspectives, including customer, staff member, and cat, allowing the layout to account for different needs within the same environment.</p>
+    <p>All three assignments were later showcased during class presentations as examples of strong execution and realistic spatial planning.</p>
 
-      <h1 class="display-5 mb-3">Shinwa</h1>
-      <p class="lead"> An immersive Japanese themed VR horror game created by The Nana Studios, a group consisting of Jolie Ng, Evan Talavera, Muhammad Nur Syakir, and myself.</p>
+    <h2 class="h3 mt-5">My Design Process</h2>
+    <p>My process generally began before opening the map editor.</p>
+    <p>I first identified who uses the environment, what activities need to occur, which spaces should be adjacent, which spaces should remain separated, what should visually dominate the environment, where users should naturally travel, which areas are public, communal, private, or restricted, and what environmental details communicate the story.</p>
+    <p>From there, I produced sketches and bubble diagrams to test relationships between spaces.</p>
+    <p>One technique I used consistently was to imagine physically walking through the environment.</p>
+    <p>I would ask: If I entered here, what would I expect to see first? What would I need next? Would I understand where I am allowed to go? Would this route make sense if I were working here rather than visiting? Would someone with different physical requirements still be able to use the space comfortably?</p>
+    <p>I already had experience thinking about user flow through UI/UX design. These assignments helped me translate that thinking into physical space, particularly through spatial hierarchy and zoning.</p>
 
-        <p>Shinwa is a VR horror game that immerses users in Japanese Folklore through various levels, each representing a respective tale.<br>
-        The game was designed to provide an atmospheric, creepy and thrilling experience for players.<br>
-        The game was created using the Unity Game Engine and requires a VR headset to play.</p>
+    <h2 class="h3 mt-5">The Witch's Abode</h2>
+    <img src="Assets/Witch'sAbode.png" class="project-image" alt="The Witch's Abode 12m by 16m residence layout">
+    <h3 class="h4 mt-4">Brief</h3>
+    <p>The first assignment required us to create a 12m by 16m isolation residence for a young adult human who lived and worked from home.</p>
+    <p>The resident would be unable to leave for two weeks while completing an important deadline.</p>
+    <p>The house needed to support sleeping, cooking, eating, sanitation, working, and other quality-of-life requirements. We were also responsible for defining the resident's occupation and character.</p>
+    <h3 class="h4 mt-4">Character &amp; Narrative</h3>
+    <p>I created Serena, a mage living within the Lunewood.</p>
+    <p>She spends her time crafting potions, cures, and curses for paying customers.</p>
+    <p>Rather than treating the assignment as simply fitting required rooms into a rectangle, I used Serena's occupation and personality to determine what the home needed to support.</p>
+    <p>She required somewhere to work with magical ingredients, store supplies, grow herbs, rest, eat, maintain personal hygiene, and spend time away from work.</p>
+    <p>The environment therefore became both a residence and a workplace.</p>
+    <h3 class="h4 mt-4">Designing for Work-Life Separation</h3>
+    <p>My primary design goal was to give Serena a believable work-life balance despite being unable to leave the property for two weeks.</p>
+    <p>I deliberately separated work, rest, entertainment, food preparation, and personal hygiene.</p>
+    <p>Rather than placing every activity into one central room, I created dedicated spaces that allowed her to mentally and physically transition between different parts of her day.</p>
+    <p>The Den functioned as a separate retreat from both her work and sleeping areas. The herb garden supported her occupation while also creating an outdoor component to the home. The dining area remained one of the dominant communal spaces in the layout, helping the house continue to feel residential rather than becoming entirely defined by Serena's profession.</p>
+    <h3 class="h4 mt-4">Ventilation as Environmental Storytelling</h3>
+    <p>Because Serena creates potions and magical substances, I also considered what living around that work would realistically require.</p>
+    <p>I incorporated multiple ventilation points so fumes from her work would not constantly circulate through the residence.</p>
+    <p>This served two purposes. Functionally, it made the home more believable. Narratively, it reinforced Serena's occupation without requiring explanatory dialogue.</p>
+    <p>Details such as ventilation, storage, herb cultivation, and workspace organisation allowed the environment itself to communicate how she lived.</p>
+    <h3 class="h4 mt-4">Spatial Hierarchy</h3>
+    <p>One of the most useful lessons from this assignment was controlling which areas visually dominated the layout.</p>
+    <p>Serena had several visually interesting spaces, particularly the garden and Den, but I did not want them to overwhelm the basic residential structure.</p>
+    <p>The lecturer specifically highlighted that the dining space remained visually dominant because of its public function, despite the presence of more unusual spaces.</p>
+    <p>The feedback noted the entrance, room geometry, private and public sanitation, functionality, and spatial hierarchy as particular strengths.</p>
+    <p>The submission received a <strong>+5 modifier</strong>, the highest possible modifier for the assignment.</p>
 
-      <h3 class="mt-4">Design Rationale</h3>
-      <p>Our team decided on creating a Japanese themed VR horror game for a multitude of reasons. Firstly, as fellow members of the gaming community, we found the horror game industry is becoming stale, and felt that most of the gameplay/concepts were overused. Moreover, not many horror games are well optimized for VR due to the hardware limitations. After doing some research, we found that there were little to no horror games that allowed players to be in the center of a horror story and therefore came up with a suitable project plan.</p>
-      <p>We have managed to identify a market for Japanese folklore-based VR horror games. Japanese-themed horror games are currently in high demand as they provide a unique perspective into what the Japanese consider to be "horror". Along with this, VR games are also popular amongst horror fans as VR manages to immerse the player fully into the environment around them, creating many opportunities for scares and frights.</p>
-      <p>For this project, I contributed in the story creation, level design, prop placement, 3D character modeling, animation, UI design, dialogue writing, VFX, lighting and post-processing.</p>
+    <h2 class="h3 mt-5">The Witch's Abode: Expanded</h2>
+    <img src="Assets/Witch'sAbodeExpanded.png" class="project-image" alt="The Witch's Abode Expanded renovated residence layout">
+    <h3 class="h4 mt-4">Redesigning Around a New User</h3>
+    <p>The second assignment required us to take the original home and adapt it to a major new constraint.</p>
+    <p>The plot increased to 20m by 20m, and an additional upper or lower floor of up to 6 by 12 squares was permitted.</p>
+    <p>A new tenant would move in. Unlike the original human resident, this character occupied a 3x3 grid footprint.</p>
+    <p>Both occupants needed access to all essential functions, while the renovated home also needed at least one private space for each resident, at least one communal space, and suitable circulation for the larger occupant.</p>
+    <p>I wrote the new narrative around Serena's former academy colleague arriving after being cursed and gradually transforming into a troll. Serena takes her in while searching for a cure.</p>
+    <h3 class="h4 mt-4">Expanding Without Losing the Original Identity</h3>
+    <p>I did not want the solution to feel like an entirely unrelated house.</p>
+    <p>Rather than removing the original functions, I reorganised and expanded them to accommodate the second resident.</p>
+    <p>The renovated home introduced a shared kitchen, shared dining, shared workspace, herb garden, large tenant bedroom, tenant bathroom, Serena's private upstairs bedroom, Serena's private bathroom, additional communal circulation, improved ventilation, and sliding doors.</p>
+    <p>The result maintained the original relationship between Serena's work and home life while adapting it for two occupants with very different physical needs.</p>
+    <h3 class="h4 mt-4">Designing for a 3x3 Character</h3>
+    <p>The larger tenant fundamentally changed how circulation had to work.</p>
+    <p>Spaces that were comfortable for a one-tile character could easily become unusable for someone occupying a 3x3 footprint.</p>
+    <p>I therefore created a much more open first-floor plan.</p>
+    <p>The centre of the residence contains substantial open circulation space, allowing the larger character to turn and move between rooms without becoming trapped by furniture or narrow corridors.</p>
+    <p>Sliding doors reduced the amount of clearance required around doorways, while wider routes connected the major communal spaces.</p>
+    <p>The lecturer specifically highlighted this open centre as successfully reflecting the traversal requirements of the larger resident.</p>
+    <h3 class="h4 mt-4">Accessibility Through Floor Planning</h3>
+    <p>I kept almost everything the larger resident needed on the first floor.</p>
+    <p>This included sleeping, bathroom access, kitchen, dining, workspace, garden, and communal areas.</p>
+    <p>Serena's private bedroom and bathroom were moved upstairs.</p>
+    <p>This solved several problems simultaneously. The larger tenant did not need to negotiate stairs. Serena retained a private area of her own. The communal first floor remained convenient for both occupants.</p>
+    <p>It also avoided the practical issue of a significantly heavier resident repeatedly moving across an upper storey.</p>
+    <p>Rather than treating accessibility as a separate feature added afterward, it directly influenced the architecture of the environment.</p>
+    <h3 class="h4 mt-4">Private &amp; Communal Zoning</h3>
+    <p>Another major goal was ensuring that living together did not mean sacrificing personal space.</p>
+    <p>Both residents were given clearly defined private quarters, while essential social and work activities remained shared.</p>
+    <p>I wanted the home to support both interaction when desired and separation when needed.</p>
+    <p>This resulted in a clear spatial hierarchy between private, shared, work, utility, and circulation.</p>
+    <p>The narrative requirement therefore became a zoning problem. Instead of simply adding another bedroom, I reconsidered how two people with different needs would realistically coexist inside the same home.</p>
+    <h3 class="h4 mt-4">Outcome</h3>
+    <p>The lecturer highlighted the distribution of spaces, room geometry, large central traversal area, and the second floor as particular strengths.</p>
+    <p>The submission received a <strong>+4 modifier</strong>.</p>
 
-      <h4 class="mt-5">Key Features</h4>
-      <ul>
-        <li>3D Surround Audio</li>
-        <li>Story Based, Free Exploration</li>
-        <li>Designed with Color-Deficiency & Lower-Limb in Mind</li>
-        <li>Original Assets</li>
-      </ul>
+    <h2 class="h3 mt-5">Nine Lives Rest</h2>
+    <img src="Assets/Programme.png" class="project-image" alt="Nine Lives Rest programme and planning diagram">
+    <img src="Assets/NineLivesRest_Programme.png" class="project-image" alt="Nine Lives Rest labelled programme layout">
+    <h3 class="h4 mt-4">Brief</h3>
+    <p>The final assignment required us to design a cat cafe within a maximum footprint of 900m².</p>
+    <p>Unlike the earlier residential exercises, this assignment required a formal programme before producing the final map.</p>
+    <p>The assignment itself only required the labelled environment and programme. I chose to expand my submission with additional design rationale so I could communicate why the spaces were arranged the way they were.</p>
+    <p>This became the strongest of the three assignments for me because I felt I was able to combine functional planning with a more imaginative concept.</p>
+    <h3 class="h4 mt-4">Concept</h3>
+    <p>I created <em>Nine Lives Rest</em>, a pirate-themed cat cafe built on a shipwreck beside a harbour.</p>
+    <p>One of my personal goals for this assignment was to move away from the very structured and realistic forms I naturally gravitated toward.</p>
+    <p>I knew I was comfortable designing spaces logically. I wanted to see whether I could preserve that functional thinking while creating something visually unusual.</p>
+    <p>The shipwreck concept gave me a less conventional footprint while still requiring the cafe to function believably.</p>
+    <h3 class="h4 mt-4">Programme Planning</h3>
+    <p>Before creating the map, I built a programme diagram identifying the required relationships between spaces.</p>
+    <p>The programme considered areas including cat play areas, cat feeding, cat resting, dining, reception, kitchen, food storage, staff areas, veterinary care, grooming, storage, toilets, and outdoor seating.</p>
+    <p>I used the diagram to determine which spaces needed immediate adjacency and which needed separation.</p>
+    <p>For example: <strong>Kitchen &rarr; Food Storage</strong>, <strong>Cat Areas &rarr; Grooming / Vet / Cat Supplies</strong>, <strong>Reception &rarr; Public Areas</strong>, and <strong>Dining &rarr; Cat Viewing</strong>.</p>
+    <p>This allowed the final layout to grow from functional relationships rather than placing rooms individually and attempting to connect them afterward.</p>
+    <h3 class="h4 mt-4">Design Principles</h3>
+    <p>Although the assignment did not require written rationale, I established seven principles before finalising the design:</p>
+    <ul><li><strong>Intuitive Spaces:</strong> Patrons should understand where they are allowed to go without constantly asking for directions.</li><li><strong>Main Attraction:</strong> Cat interaction should remain the primary visual and experiential focus.</li><li><strong>Controlled Interaction:</strong> The cats and customers should be able to interact without compromising safety or operations.</li><li><strong>Comfort Choices:</strong> Different environments should accommodate different sensory preferences.</li><li><strong>Cat Welfare:</strong> The animals' needs should take priority over maximum customer interaction.</li><li><strong>Efficient Operation:</strong> Staff should be able to perform their duties without unnecessary travel.</li><li><strong>Open Concept:</strong> The harbour location should take advantage of natural openness, ventilation, and views.</li></ul>
+    <p>These principles gave me criteria against which I could evaluate the layout rather than designing purely from visual preference.</p>
+    <h3 class="h4 mt-4">Designing Three Experiences</h3>
+    <p>I intentionally divided the cafe into three broad environmental experiences.</p>
+    <p><strong>Lively Indoor Cat Area:</strong> The primary public space focuses on cat interaction and visual activity. This is positioned prominently so customers entering the cafe immediately understand its main attraction.</p>
+    <p><strong>Relaxed Outdoor Seating:</strong> Outdoor seating provides a quieter environment with fewer stimuli. Customers who still want to remain near the cafe but prefer less activity have another option.</p>
+    <p><strong>Secluded Back-of-House:</strong> Staff areas, storage, food preparation, veterinary functions, grooming, and cat welfare spaces are kept away from the busiest customer routes.</p>
+    <p>The result was not simply public versus private zoning. It was designed around different levels of activity and sensory intensity.</p>
+    <h3 class="h4 mt-4">Making the Main Attraction Visible</h3>
+    <p>The cats are the primary reason customers visit the cafe, so I treated the main interaction area as the visual focal point.</p>
+    <p>Dining was positioned so customers could still observe the cats while eating, even when they were not actively participating in the play area.</p>
+    <p>This allowed the primary attraction to remain visible from multiple customer spaces. It also reduced the need for customers to crowd the actual cat interaction zone simply to see what was happening.</p>
+    <h3 class="h4 mt-4">Designing for Cat Welfare</h3>
+    <p>I wanted the layout to function as an actual cat cafe rather than simply a restaurant filled with cats.</p>
+    <p>The design therefore included spaces such as cat resting area, feeding area, grooming, veterinary office, cat-food and water storage, cat supplies, controlled gates, and separation between customer and staff spaces.</p>
+    <p>The cats were given places where they could withdraw from customers entirely. This was important because I wanted interaction to occur on the animals' terms rather than forcing every part of the environment to remain publicly accessible.</p>
+    <h3 class="h4 mt-4">Staff Circulation</h3>
+    <p>Staff circulation was not a required focus of the assignment, but I added it because I wanted the cafe to operate realistically.</p>
+    <p>I mentally walked through the layout from the perspective of employees and considered tasks such as moving between kitchen and food storage, reaching tables, accessing staff toilets, moving cats to grooming or veterinary care, restocking cat supplies, monitoring public spaces, reaching reception, and cleaning and maintaining facilities.</p>
+    <p>This affected where I placed back-of-house rooms and how they connected.</p>
+    <p>The goal was to reduce situations where staff needed to cross high-traffic customer areas to perform routine operations.</p>
+    <h3 class="h4 mt-4">Hygiene &amp; Separation</h3>
+    <p>Food preparation and animal-care spaces were deliberately separated.</p>
+    <p>A cat cafe requires the visual and experiential relationship between animals and dining, but those functions do not need to share the same operational space.</p>
+    <p>The layout therefore maintains strong customer visibility of the cats while keeping kitchen and food-storage functions appropriately separated from animal-care areas.</p>
+    <p>This allowed the theme and main attraction to remain prominent without sacrificing believable operations.</p>
+    <h3 class="h4 mt-4">Spatial Hierarchy &amp; Zoning</h3>
+    <p>Of the three assignments, <em>Nine Lives Rest</em> was where I felt my understanding of spatial hierarchy and zoning developed the most.</p>
+    <p>The programme contained many rooms that could easily have become a collection of disconnected functional boxes.</p>
+    <p>Instead, I organised them around several levels of access:</p>
+    <p class="text-center fs-5 my-4"><strong>Public &rarr; Controlled Public &rarr; Cat-Focused &rarr; Staff &rarr; Specialist Care</strong></p>
+    <p>This made it easier to decide both adjacency and visual prominence.</p>
+    <p>The final layout allowed the cat interaction space to dominate the customer experience while more operational spaces remained accessible without becoming visually intrusive.</p>
 
-      <h4 class="mt-5">Tools & Technologies</h4>
-      <ul>
-        <li>Unity Engine (3D)</li>
-        <li>C# Scripting</li>
-        <li>Photoshop, Procreate & Clip Studio Paint</li>
-        <li>Autodesk Maya (3D Modeling)</li>
-        <li>Mixamo (3D Animations)</li>
-      </ul>
+    <h2 class="h3 mt-5">Art Direction &amp; Environment Assembly</h2>
+    <p>The module focused primarily on level design and programme creation rather than original environment art.</p>
+    <p>I built the environments using a combination of default tiles, purchased asset packs, free asset packs, and selected original artwork.</p>
+    <p>My main responsibility was therefore not asset production, but selecting and arranging visual elements so the resulting spaces communicated their function clearly.</p>
+    <p>RPG Map Editor 2 allowed me to rapidly test different geometries, room sizes, routes, and adjacencies without the additional production cost of building a full playable level.</p>
+    <p>This kept the focus on the spatial-design decisions themselves.</p>
 
-      <a href="/" class="btn btn-outline-light mt-4">← Back to Projects</a>
-    </div>
-  </section>
+    <h2 class="h3 mt-5">Lecturer Feedback &amp; Outcome</h2>
+    <p>All three projects received strongly positive lecturer feedback and were showcased during class presentations as examples of effective spatial planning.</p>
+    <p><strong>The Witch's Abode:</strong> The lecturer praised the entrance, spatial dominance, room geometry, functionality, and distinction between private and public sanitation. Modifier: <strong>+5</strong>.</p>
+    <p><strong>The Witch's Abode: Expanded:</strong> The lecturer highlighted the distribution of spaces, open central circulation required by the larger tenant, room geometry, and second-floor design. Modifier: <strong>+4</strong>.</p>
+    <p><strong>Nine Lives Rest:</strong> The lecturer described the concept, theming, and execution as excellent, with no major issues to critique. Modifier: <strong>+5</strong>.</p>
+    <p>The modifier scale ranged from -5 to +5, with a typical submission that successfully met the assignment requirements receiving approximately 0.</p>
+    <p>All three designs were also presented during class as examples of strong execution and realistic spatial planning.</p>
 
-  <!-- Footer -->
-  <footer class="text-white p-4 mt-5" style="background-color: #00000083;">
-    <div class="container d-flex justify-content-between align-items-center">
-      <a href="https://www.linkedin.com/in/mandyykoh/" target="_blank" class="btn text-light d-flex align-items-center">
-        <img src="Assets/LI-In-Bug.png" alt="LinkedIn" style="height: 20px; width: 20px; margin-right: 8px;">
-        LinkedIn
-      </a>
-      <p class="mb-0 text-end">&copy; 2026 Mandy's Portfolio</p>
-    </div>
-  </footer>
+    <h2 class="h3 mt-5">What I Learned</h2>
+    <p>Before this module, I was already comfortable with user flow, navigation, and realistic functional planning because of my previous UI/UX and design experience.</p>
+    <p>The largest improvement for me was understanding how those principles translated into spatial hierarchy and zoning.</p>
+    <p>I became more deliberate about questions such as: Which room should dominate the first impression? Which functions deserve adjacency? Which spaces need separation? How does the size of a user change architecture? How should privacy affect circulation? How can multiple user groups occupy the same environment without disrupting one another? When should a desirable destination justify an inefficient route? How can visual composition reinforce functional importance?</p>
+    <p>The three assignments also showed me that realistic design and creative design did not need to be opposites.</p>
+    <p><em>Nine Lives Rest</em> was particularly important in this respect.</p>
+    <p>Its shipwreck setting was significantly more imaginative than the environments I would normally default toward, but the programme underneath it remained grounded in realistic circulation, hygiene, cat welfare, staff operations, and customer comfort.</p>
+    <p>That combination made it my strongest project of the three.</p>
 
+    <h2 class="h3 mt-5">Key Contributions</h2>
+    <ul><li>Completed three individual environment-design assignments focused on spatial planning and level design.</li><li>Used sketches, programme diagrams, adjacency planning, and role-based walkthroughs before building final layouts.</li><li>Designed The Witch's Abode around a believable work-from-home routine with deliberate separation between work, rest, entertainment, and residential functions.</li><li>Used ventilation, storage, herb cultivation, and room placement to reinforce character occupation through environmental storytelling.</li><li>Redesigned the residence for a second 3x3 occupant while preserving all original functions.</li><li>Used wider routes, open central circulation, sliding doors, first-floor accessibility, and vertical zoning to accommodate different occupant sizes.</li><li>Created distinct private and communal zones to balance social interaction with personal space.</li><li>Developed the complete pirate cat cafe concept for Nine Lives Rest.</li><li>Created its required programme and bubble diagram before producing the final map.</li><li>Added my own operational criteria covering intuitive circulation, cat welfare, sensory comfort, staff efficiency, and controlled interaction.</li><li>Designed separate lively, quiet, and back-of-house environments for different users and activity levels.</li><li>Considered the layout from multiple perspectives, including customer, staff, and animal needs.</li><li>Designed realistic staff circulation, hygiene separation, animal-care facilities, and customer sightlines beyond the minimum assignment requirements.</li><li>Strengthened my understanding of spatial hierarchy, functional zoning, adjacency, and multi-user circulation.</li><li>Received +5, +4, and +5 modifiers across the three assignments.</li><li>Had all three designs showcased during class presentations for strong execution and realistic spatial planning.</li></ul>
+    <a href="/" class="btn btn-outline-light mt-4">&larr; Back to Projects</a>
+  </div></section>
+
+  <footer class="text-white p-4 mt-5" style="background-color:#00000083;"><div class="container d-flex justify-content-between align-items-center"><a href="https://www.linkedin.com/in/mandyykoh/" target="_blank" class="btn text-light d-flex align-items-center"><img src="Assets/LI-In-Bug.png" alt="LinkedIn" style="height:20px;width:20px;margin-right:8px;">LinkedIn</a><p class="mb-0 text-end">&copy; 2026 Mandy's Portfolio</p></div></footer>
   <script src="script.js"></script>
 </body>
 </html>
